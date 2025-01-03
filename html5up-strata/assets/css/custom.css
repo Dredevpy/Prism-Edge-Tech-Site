@@ -1,0 +1,74 @@
+.hero-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.inner {
+    text-align: center;
+}
+
+#header .inner h1 {
+    color: #FFFFFF;
+    font-size: 2em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+#header .inner .second_line {
+    color: rgba(80, 205, 250, 0.933);
+}
+
+#header .inner p {
+    color: #CCCCCC;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+body{
+    color:#000
+}
+#header .inner .button {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: #007bff;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header .inner .button:hover {
+    background-color: #0056b3;
+}
+
+#header .logo-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+#header .logo-container .company-name{
+    color: #fff;
+    font-size: 1.8em;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 0.5em;
+    margin-top:0;
+}
+#header .logo-container img.logo{
+    max-width: 80px;
+    margin-right: 10px;
+}
+#header .logo-container a {
+  display: flex;
+    align-items: center;
+        text-decoration: none;
+
+}
