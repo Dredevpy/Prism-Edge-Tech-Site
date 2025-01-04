@@ -1,0 +1,179 @@
+# Comprehensive Website Creation Progress Log
+
+## Project Overview
+
+This log documents the creation of a website for a tech consultant specializing in Azure cloud solutions and AI automation. The primary goal is to build a functional website quickly, prioritizing efficiency and showcasing expertise while maintaining good user experience, design, psychology, and SEO.
+
+## Session 1: Initial Planning and Content Gathering (Dec 28, 2024)
+
+-   **Action:** Initial sitemap creation, focusing on Azure cloud solutions for small businesses. Established a content inventory tracking system using a spreadsheet.
+-   **Output:** Drafted initial sitemap, content tracking spreadsheet, prepared structured content approach, collected initial hero section content and service lists, defined website page structure.
+-   **Tools:** Spreadsheet (Google Sheets/Excel) for content tracking.
+-   **Psychological Considerations:** None at this stage, focus on gathering and organizing content.
+-   **Files Created:** `code.txt` (Initial progress log)
+    * *Content:* Site mapping and content tracking.
+
+## Session 2: Design Exploration and AI Prompting (Dec 28, 2024)
+
+-   **Action:** Drafted AI prompts for initial website design, selected modern and minimalist website style, reviewed and incorporated design psychology principles, began template evaluation.
+-   **Output:** Drafted initial AI prompts, selected a modern and minimalist style, reviewed and applied design psychology principles, started evaluating templates.
+-   **Tools:** Planning to use AI image generation tools (DALL-E 2, Midjourney, etc.) and a website builder.
+-   **Psychological Considerations:** Focused on visual appeal, clarity, and establishing a professional image.
+-   **Files Created:** `code (1).txt` (Progress Log), `design.txt` (Design priorities), `Website design.txt` (Design Psychology Guide)
+    *  `code (1).txt` - *Content:* Template evaluation and AI design planning
+    *  `design.txt` - *Content:* Design priorities
+    *  `Website design.txt` - *Content:*  Design psychology principles
+
+## Session 3: Template Selection, Hero Image, and Iterations (Dec 28, 2024)
+
+-   **Action:** Refined hero image generation strategy, selected Strata template (HTML5 UP), started hero image generation with Midjourney, initial template evaluation (Mono was also considered)
+-   **Output:**  "Before" and "After" hero image generated using Midjourney, template selected (Strata), Refined hero image generation strategy.
+-   **Tools:** Midjourney for image generation, GIMP for image editing, Strata template (HTML5 UP), and GitHub pages.
+-   **Psychological Considerations:** Prioritizing user engagement with relatable visuals and clear value propositions.
+-   **Files Created:**  `code (2).txt`, `code(3).txt`, `code(4).txt`,
+    *   `code (2).txt` - *Content:* AI prompt drafting and template selection
+    *   `code (3).txt` - *Content:* Template selection and hero image
+    *   `code (4).txt` - *Content:* Hero image integration and design.
+
+## Session 4: Content Integration and Logo Styling (Dec 29, 2024)
+
+-   **Action:** Initial content integration into Strata template, worked on styling logo and company name in the header, focusing on responsiveness.
+-   **Output:** Basic website pages populated (Homepage, About, Services, Blog, Contact), hero section styled with custom CSS, initial logo and company name integration into hero section, call to action below the hero image.
+-   **Tools:** HTML/CSS, Midjourney for image generation, GIMP for image editing, Strata template (HTML5 UP).
+-   **Psychological Considerations:** Making use of the existing template structure, prioritization of function and information.
+-   **Files Created/Modified**:  `index.html`, `custom.css`,
+    *   `index.html` - Initial version
+    *   `custom.css` - Added initial CSS for hero styling and logo placement
+
+## Session 5: Background Image Selection and Main Section Restructuring (Dec 29, 2024)
+
+-   **Action:** Evaluated several AI-generated background images based on color psychology principles, refined main section layout to improve scannability.
+-   **Output:** Selection of optimal AI-generated background image, restructured main page content using a grid layout and more white space, logo and company name styling continued for clarity, call to action button style adjustments.
+-  **Tools**: HTML/CSS, AI Image Generation tools, and Gimp for image editing
+-  **Psychological Considerations:** Using visual hierarchy, appropriate white space, proper color psychology (blue for trust, red for action) and the Gestalt principle to organize elements for ease of use.
+-   **Files Created/Modified:** `index.html`, `custom.css`, `main.css`
+  *   `index.html`- Modified to place correct content into correct location.
+  *  `custom.css` - added properties for the logo and main page content.
+    *  `main.css` - included to document initial template styles.
+
+## Session 6: Logo Refinement, Main Content, and Vendor Logos (Dec 29, 2024)
+
+-   **Action:** Adjusted the company name font and color to increase visibility, added vendor logos to the main page to increase social proof, and addressed the issues with image paths to ensure that they worked as expected.
+-   **Output:** The company name is visible, a clear social proof section is included on the main page, correct filepaths to the images.
+-   **Tools:** GIMP, HTML/CSS
+-   **Psychological Considerations:** Implementation of authority and social proof via recognizable logos, emphasis on clarity.
+-   **Files Created/Modified:** `index.html`, `custom.css`, `main.css`
+    * `index.html`- Modified to include vendor logos
+   * `custom.css` - modified to reflect call to action styling
+
+## Session 7: Portfolio and Content Strategy (Dec 29, 2024)
+
+-   **Action:** Refined content strategy, shifted focus from case studies to educational content, explored options for showcasing AZ-104 learning journey, researched audience preferences, and technical content reframing.
+-    **Output:** Identified content options (guides, blogs, infographics), determined the need for clear explanations to build credibility.
+-   **Tools:** None at this stage
+-   **Psychological Considerations:** Building trust with technical accuracy and clear explanations, understanding target audience needs.
+-   **Files Created:** `portfolio-progress-journal.md`, `portfolio_creation_progress_journal.md`, `portfolio-progress-journal.-v2.md`
+    - `portfolio-progress-journal.md` -  *Content:* initial notes for portfolio strategy
+    -`portfolio_creation_progress_journal.md` - *Content:* portfolio strategy, and audience preference research
+    -`portfolio-progress-journal.-v2.md` - *Content:* detailed notes for developing portfolio content
+
+## Files Submitted and Their Content
+
+**1. `code (4).txt`:**
+   - *Type*: Text file (Progress Log).
+   - *Content:* Website creation progress log including the use of Midjourney for image generation, using the Strata template, and other tools.
+   - *Settings:* N/A (plain text).
+
+**2. `code (3).txt`:**
+   - *Type*: Text file (Progress Log).
+   - *Content:* Website creation progress log including a selection of a template and the generation of hero images using Midjourney.
+   - *Settings:* N/A (plain text).
+
+**3. `code (2).txt`:**
+   - *Type*: Text file (Progress Log).
+   - *Content:* Website creation progress log including drafting AI prompts and narrowing down template selection.
+   - *Settings:* N/A (plain text).
+
+**4. `code.txt`:**
+   - *Type*: Text file (Progress Log).
+   - *Content:* Initial website creation progress log including site mapping and content tracking.
+   - *Settings:* N/A (plain text).
+
+**5. `code (1).txt`:**
+   - *Type*: Text file (Progress Log).
+   - *Content:* Website creation progress log including template selection and AI design planning.
+   - *Settings:* N/A (plain text).
+
+**6. `Website design.txt`:**
+   - *Type*: Text file (Design principles).
+   - *Content:* Website structure and navigation details with design and psychology principles, color psychology and other usability notes.
+   - *Settings:* N/A (plain text).
+
+**7. `design.txt`:**
+   - *Type*: Text file (Design Priorities).
+   - *Content:* Details of design priorities including, visual hierarchy, emotional engagement, simplicity, and accessibility. Also contains information for color and contrast.
+   - *Settings:* N/A (plain text).
+
+**8. `index.html`:**
+   - *Type*: HTML file (Website homepage structure).
+   - *Content:* HTML5 structure for a website including hero section, service and AI content sections and vendor logos, and accurate asset paths.
+   - *Settings:* HTML5 structure, grid-based layout using "Strata" template CSS, includes `custom.css`,  and font awesome libraries
+
+**9. `custom.css`:**
+   - *Type*: CSS file (Website Custom styling).
+   - *Content:* Includes custom styling for the header, logo, main page content, icons and call to action buttons, correct styling for responsiveness.
+   - *Settings:* CSS for controlling style, layout, colors, fonts, whitespace, and responsiveness.
+
+**10. `fontawesome-all.min.css`:**
+    - *Type:* CSS file
+    - *Content:* Contains the full font awesome library
+
+**11. `main.css`:**
+   - *Type*: CSS file (Main template CSS).
+   - *Content:* Contains core CSS for the Strata template.
+   - *Settings:* N/A.
+
+**12. `site_data-bak.yaml.txt`:**
+    - *Type:* Text file containing YAML structure (Site Data).
+    - *Content:* Data file containing information such as company name, logo, purpose, key services, target market, USP, customer profile, homepage sections, services overview, AI section, and more for a website.
+    - *Settings:* YAML document used for planning site content structure and organization.
+
+**13. `Brand vision .txt`:**
+   - *Type*: Text file (Brand Vision).
+   - *Content:* Brand vision statement, core values, offerings, and positioning strategy.
+   - *Settings:* Plain text for brand guidelines.
+
+**14. `marketing-principles.txt`:**
+    -*Type*: Text file (Marketing Strategies).
+    -*Content*: Marketing principles including StoryBrand, SPIN, Challenger and Commercial Teaching models and more.
+    -*Settings*: Plain Text used to inform marketing strategy.
+
+**15. `web-design-principles.txt`:**
+   - *Type*: Text file (Web Design Strategies)
+   - *Content:* Contains detailed concepts, strategies, and psychological elements.
+   - *Settings:* Plain Text used to inform all aspects of design.
+
+**16. Background Image Options (Images)**
+     -*Type:* Multiple Images
+     -*Content:* Images provided to select the correct background based on color psychology.
+
+**17. Vendor logos (Images):**
+    *Type:* Multiple Images
+   -*Content:* Images from various technology vendors used for social proof
+
+**18. `portfolio-progress-journal.md`:**
+    -*Type:* Text File
+    -*Content:* Initial notes for portfolio strategy
+    -*Settings:* Markdown format used to keep a structured text document
+
+**19. `portfolio_creation_progress_journal.md`:**
+    -*Type:* Text File
+    -*Content:* portfolio strategy and audience preference research.
+    -*Settings:* Markdown format used to keep a structured text document
+
+**20. `portfolio-progress-journal.-v2.md`:**
+    -*Type:* Text File
+    -*Content:*  Detailed notes for developing portfolio content.
+    -*Settings:* Markdown format used to keep a structured text document
+
+That is a comprehensive summary of all our work. If you would like, we can focus on implementing a particular "Next Step" from our updated progress log, such as styling the call to action, or working on one of the "portfolio-progress-journal.-v2.md" enhancements such as the "FAQ" or "ROI calculator". What would be your preference?

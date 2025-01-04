@@ -56,19 +56,48 @@ body{
 }
 
 #header .logo-container .company-name{
-    color: #fff;
-    font-size: 1.8em;
-    font-family: 'Montserrat', sans-serif;
+    color: #ffffff; /* White for high contrast */
+    font-size: 2.2em;
+    font-family: 'Helvetica', sans-serif;
     margin-left: 0.5em;
     margin-top:0;
+    font-weight: normal;
 }
 #header .logo-container img.logo{
-    max-width: 80px;
+    max-width: 100px; /* Increased logo size */
     margin-right: 10px;
+    font-family: 'Montserrat', sans-serif; /* Ensure font consistency with company name */
+
 }
 #header .logo-container a {
   display: flex;
     align-items: center;
         text-decoration: none;
 
+}
+#main section {
+	padding-bottom: 1em;
+}
+
+#main section > .major{
+	margin-bottom: 1em;
+}
+#main article {
+    padding: 1em; /* Add padding to each content block */
+    margin-bottom: 1em; /* Add margin between content blocks */
+}
+
+#main section .icon {
+    color: rgba(100, 100, 100, 0.8) /* Light gray for visibility */
+}
+#main .button {
+    background-color: #e43f5a;
+    color: white !important;
+    border-color: #e43f5a;
+}
+
+#main .button:hover{
+  background-color: #ad263d;
+    color: white !important;
+    border-color: #ad263d;
 }
