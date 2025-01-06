@@ -1,3 +1,5 @@
+/* Hero Image Styling */
+
 .hero-image {
     display: block;
     max-width: 100%;
@@ -26,13 +28,17 @@
     margin-bottom: 2em;
     text-align: center;
 }
-body{
-    color:#000
+
+/* General Body Styles */
+body {
+    color:#000;
 }
+
+/* Hero Button Styling */
 #header .inner .button {
     display: inline-block;
     padding: 1em 2em;
-    background-color: #007bff;
+    background-color: #e43f5a;
     color: #fff !important;
     text-decoration: none;
     border-radius: 5px;
@@ -43,8 +49,12 @@ body{
 }
 
 #header .inner .button:hover {
-    background-color: #0056b3;
+  background-color: #ad263d;
+    color: white !important;
+    border-color: #ad263d;
 }
+
+/* Logo Container Styling */
 
 #header .logo-container {
     display: flex;
@@ -54,50 +64,96 @@ body{
     left: 20px;
     z-index: 2;
 }
-
-#header .logo-container .company-name{
-    color: #ffffff; /* White for high contrast */
-    font-size: 2.2em;
-    font-family: 'Helvetica', sans-serif;
-    margin-left: 0.5em;
-    margin-top:0;
-    font-weight: normal;
-}
-#header .logo-container img.logo{
-    max-width: 100px; /* Increased logo size */
-    margin-right: 10px;
-    font-family: 'Montserrat', sans-serif; /* Ensure font consistency with company name */
-
-}
 #header .logo-container a {
   display: flex;
     align-items: center;
         text-decoration: none;
 
 }
+
+/* Company Name Styling */
+#header .logo-container .company-name {
+    color: #ffffff;
+    font-size: 2.2em;
+    font-family: 'Helvetica', sans-serif;
+    margin-left: 0.5em;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+/* Logo Styling */
+
+#header .logo-container img.logo {
+    max-width: 100px;
+    margin-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Main Section Spacing */
 #main section {
-	padding-bottom: 1em;
+	padding-bottom: 1em !important;
 }
 
 #main section > .major{
-	margin-bottom: 1em;
-}
-#main article {
-    padding: 1em; /* Add padding to each content block */
-    margin-bottom: 1em; /* Add margin between content blocks */
+	margin-bottom: 1em !important;
 }
 
-#main section .icon {
-    color: rgba(100, 100, 100, 0.8) /* Light gray for visibility */
+#main article {
+    padding: 1em !important;
+    margin-bottom: 1em !important;
 }
+
+/* Icon Styling */
+
+#main section .icon {
+    color: rgba(100, 100, 100, 0.8);
+}
+
+/* Main section button styling */
+
 #main .button {
     background-color: #e43f5a;
     color: white !important;
     border-color: #e43f5a;
 }
 
-#main .button:hover{
-  background-color: #ad263d;
+#main .button:hover {
+    background-color: #ad263d;
     color: white !important;
     border-color: #ad263d;
+}
+
+/* Remove body background and z-index */
+
+body {
+    color: #000;
+}
+#main {
+     margin-top: 0 !important;
+    padding-top: 100px !important;
+}
+
+#header {
+    z-index: 1; /* Ensure the header is on top */
+}
+
+/* Vendor Logo Styling */
+#main .row article img {
+    max-width: 70px !important;
+    height: auto !important;
+   filter: none !important;
+   opacity: 1 !important;
+    display: block;
+    margin: 0 auto;
+}
+#main .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+}
+#main .row article {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
 }
