@@ -154,12 +154,7 @@ body {
     flex-direction: column !important;
 }
 /* Header navigation links */
-#navBar-container{
-    width: 100%;
-    position: relative;
-    z-index: 2;
-    height: 50px;
-}
+
 #navBar ul {
     list-style: none;
     padding: 0;

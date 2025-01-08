@@ -81,7 +81,7 @@ This log documents the creation of a website for a tech consultant specializing 
 -   **Files Created/Modified:** `index.html`, `custom.css`, `main.css`
     *   `index.html`- Modified to include vendor logos
     *   `custom.css` - modified to reflect call to action styling
-     *   `main.css` - included to document initial template styles.
+   * `main.css` - included to document initial template styles.
 
 ## Session 7: Portfolio and Content Strategy (Dec 29, 2024)
 
@@ -116,7 +116,7 @@ This log documents the creation of a website for a tech consultant specializing 
 -   **Files Created/Modified:** `index.html`, `custom.css`, `main.css`
    *   `index.html` - Corrected image paths.
     *   `custom.css` - Corrected header overlap and logo sizing
-   * `main.css` - Original Strata template
+   *   `main.css` - Original Strata template
 
 ## Session 10:  Logo Placement, CSS Overwrite Issue Resolved, Spacing and Sizing (Dec 29, 2024)
 
@@ -184,6 +184,7 @@ This log documents the creation of a website for a tech consultant specializing 
    -    **Sales and Influence**: Clear communication builds trust and makes your site look more professional
    -    **Files Created/Modified**: `about.html`
        * `about.html`: Corrected the certificate names
+
 ## Session 17: Correction of Index.html and the custom.css file (Dec 29, 2024)
 
    -  **Action:** Fixed the structure of `index.html` and corrected the `custom.css` file to implement the correct styling and filepaths for the images.
@@ -200,6 +201,37 @@ This log documents the creation of a website for a tech consultant specializing 
   *  **Output:**  All subsequent actions should emphasize the value and focus on solutions, rather than personal characteristics. The email is a clear business email address.
    *   **Psychological Considerations:** To use language and imagery to appeal to people from all backgrounds.
    *   **Sales and Influence:** Focus on the professional skills of the organization while building trust.
+
+## Session 19: Added Navigation Bar (Dec 29, 2024)
+   -   **Action:** Added a navigation bar at the top of the page to provide a better way to navigate.
+  * **Output**: All pages now have a visible and usable navigation
+    *   **Psychological Considerations:** Familiar design reduces cognitive load.
+    *   **Sales and Influence:** Improves usability and hence makes it easier for visitors to stay on site.
+   *    **Files Created/Modified**: `index.html`, `about.html`, `services.html`, `custom.css`
+       *   `index.html`: Removed old navigation properties and included the new navigation.
+       *   `about.html`: added a navigation bar at the top
+        *  `services.html`: added a navigation bar at the top
+       *   `custom.css`: added correct styling for the links
+
+## Session 20: Updated navigation properties, and logo (Dec 30, 2024)
+   -  **Action:**  Removed the text from the logo, and implemented correct style to the navigation
+    -  **Output:** Logo now fits banner better, navigation is styled correctly.
+   -    **Psychological Considerations**:  We are using clear and familiar styles and navigation to ensure that visitors are not confused.
+  -  **Sales and Influence:**  Clear design makes information more accessible, promoting conversions.
+    *   **Files Created/Modified:** `index.html`, `about.html`, `services.html`, `custom.css`
+        *   `index.html`: updated to include banner and remove redundant company name.
+        *   `about.html`: updated to include banner and remove redundant company name
+        *   `services.html` updated to include banner and remove redundant company name
+        *   `custom.css`: Updated the css for logo and navigation properties
+
+## Session 21: Spacing Fixes in Header (Dec 30, 2024)
+
+   - **Action**: I have removed the max-width property from the logo container. I also have applied padding to the header element to ensure proper spacing of the banner and navigation.
+   -    **Output**:  The banner and navigation bar are displayed correctly.
+  -    **Psychological Considerations**: Good spacing helps readability and reduces visual clutter.
+  -   **Sales and Influence:** Clean website design makes your site look professional.
+    *    **Files Created/Modified**: `custom.css`
+     *   `custom.css` - Corrected properties for header and logo spacing
 
 ## Files Submitted and Their Content (Updated)
 
@@ -240,7 +272,7 @@ This log documents the creation of a website for a tech consultant specializing 
 
 **8. `index.html`:**
    - *Type*: HTML file (Website homepage structure).
-   - *Content:* HTML5 structure for a website including hero section, service and AI content sections and vendor logos, and a `Why Choose Us Section` with accurate asset paths.
+   - *Content:* HTML5 structure for a website including hero section, service and AI content sections and vendor logos, and a `Why Choose Us Section` with accurate asset paths, a navigation bar at the top and a proper structure.
    - *Settings:* HTML5 structure, grid-based layout using "Strata" template CSS, includes `custom.css`, and font awesome libraries
 
 **9. `custom.css`:**
@@ -305,21 +337,21 @@ This log documents the creation of a website for a tech consultant specializing 
  - *Content*: Guidelines for how I am supposed to help
  - *Settings*: Plain text used for context
 
-**22 `website-reccomendation.txt`**:
+**22.  `website-reccomendation.txt`**:
    -  *Type:* Text File
    -  *Content*:  Provides recommendations for improvements for messaging, authority, social proof and usability.
    -  *Settings*: Plain text
-
 **23. `about.html`:**
    - *Type*: HTML file (Website about page structure).
-   - *Content:* HTML5 structure for a website including an About section, Team Profile section, a core values, a technology section, certification and acheivment sections and a Why Choose Us section.
+   - *Content:* HTML5 structure for a website including an About section, Team Profile section, a core values, a technology section, certification and acheivment sections and a Why Choose Us section, with new navigation bar.
+   - *Settings:* HTML5 structure, grid-based layout using "Strata" template CSS, includes `custom.css`, and font awesome libraries
+**24. `services.html`:**
+  -*Type*: HTML file (Website services page structure).
+  - *Content:* HTML5 structure for a website including the services offered with corresponding icons, and a call to action buttons, also including a technical section, with new navigation bar.
+   - *Settings*: HTML5 structure, grid-based layout using "Strata" template CSS, includes `custom.css`,  and font awesome libraries
+**25. `index.html`:**
+   - *Type*: HTML file (Website homepage structure).
+   - *Content:* HTML5 structure for a website including hero section, service and AI content sections and vendor logos, and a `Why Choose Us Section` with accurate asset paths, a navigation bar at the top
    - *Settings:* HTML5 structure, grid-based layout using "Strata" template CSS, includes `custom.css`,  and font awesome libraries
 
-**24. `services.html`**
- - *Type*: HTML file (Website services page structure).
-  - *Content:* HTML5 structure for a website including the services offered with corresponding icons, and a call to action buttons.
-   - *Settings*: HTML5 structure, grid-based layout using "Strata" template CSS, includes `custom.css`,  and font awesome libraries
-
-I am now ready to move on. I believe that with this step the site should now be functioning as expected.
-
-Before I generate the code for the services page, can you please confirm that the site is working for you now?
+I have now completed these changes and I am hoping that we can finally move past these layout issues. Before I move on, could you please check your website and let me know if we have finally fixed the banner overlap issue?
