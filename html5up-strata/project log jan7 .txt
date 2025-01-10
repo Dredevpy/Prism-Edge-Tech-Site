@@ -1,0 +1,412 @@
+# Comprehensive Website Creation Progress Log - (Updated with Psychological and Sales Focus)
+
+## Project Overview
+
+This log documents the creation of a website for a tech consultant specializing in Azure cloud solutions and AI automation. The primary goal is to build a functional website quickly, prioritizing efficiency and showcasing expertise while maintaining good user experience, design, psychology, and SEO and is designed to maximize conversion by influencing user behavior at every stage.
+
+## System Prompt Adjustments (Dec 29, 2024)
+
+-   **Action:** Revised system prompt to incorporate principles of website design psychology, color psychology, and sales and influence.
+-   **Output:** All future decisions and designs should be based on these elements.
+-   **Changes to Instructions:**
+    *   Emphasized use of color psychology in design choices.
+    *   Prioritized visual hierarchy and scannability for content presentation.
+    *   Incorporated sales and influence strategies into all aspects of design and content decisions.
+    *   Ensure content is persuasive and leads to a call to action.
+
+## Session 1: Initial Planning and Content Gathering (Dec 28, 2024)
+
+-   **Action:** Initial sitemap creation, focusing on Azure cloud solutions for small businesses. Established a content inventory tracking system using a spreadsheet.
+-   **Output:** Drafted initial sitemap, content tracking spreadsheet, prepared structured content approach, collected initial hero section content and service lists, defined website page structure.
+-   **Tools:** Spreadsheet (Google Sheets/Excel) for content tracking.
+-   **Psychological Considerations:** None at this stage, focus on gathering and organizing content.
+-   **Sales and Influence:** None at this stage, focus on gathering and organizing content
+-   **Files Created:** `code.txt` (Initial progress log)
+    *   *Content:* Site mapping and content tracking.
+
+## Session 2: Design Exploration and AI Prompting (Dec 28, 2024)
+
+-   **Action:** Drafted AI prompts for initial website design, selected modern and minimalist website style, reviewed and incorporated design psychology principles, began template evaluation.
+-   **Output:** Drafted initial AI prompts, selected a modern and minimalist style, reviewed and applied design psychology principles, started evaluating templates.
+-   **Tools:** Planning to use AI image generation tools (DALL-E 2, Midjourney, etc.) and a website builder.
+-   **Psychological Considerations:** Focused on visual appeal, clarity, and establishing a professional image.
+ -  **Sales and Influence:** Initial focus on establishing credibility and authority via design.
+-   **Files Created:** `code (1).txt` (Progress Log), `design.txt` (Design priorities), `Website design.txt` (Design Psychology Guide)
+    *   `code (1).txt` - *Content:* Template evaluation and AI design planning
+    *   `design.txt` - *Content:* Design priorities
+    *   `Website design.txt` - *Content:* Design psychology principles
+
+## Session 3: Template Selection, Hero Image, and Iterations (Dec 28, 2024)
+
+-   **Action:** Refined hero image generation strategy, selected Strata template (HTML5 UP), started hero image generation with Midjourney, initial template evaluation (Mono was also considered)
+-   **Output:** "Before" and "After" hero image generated using Midjourney, template selected (Strata), Refined hero image generation strategy.
+-   **Tools:** Midjourney for image generation, GIMP for image editing, Strata template (HTML5 UP), and GitHub pages.
+-   **Psychological Considerations:** Prioritizing user engagement with relatable visuals and clear value propositions.
+-    **Sales and Influence:** Selection of a professional and modern design to increase trust.
+-   **Files Created:** `code (2).txt`, `code(3).txt`, `code(4).txt`,
+    *   `code (2).txt` - *Content:* AI prompt drafting and template selection
+    *   `code (3).txt` - *Content:* Template selection and hero image
+    *   `code (4).txt` - *Content:* Hero image integration and design.
+
+## Session 4: Content Integration and Logo Styling (Dec 29, 2024)
+
+-   **Action:** Initial content integration into Strata template, worked on styling logo and company name in the header, focusing on responsiveness.
+-   **Output:** Basic website pages populated (Homepage, About, Services, Blog, Contact), hero section styled with custom CSS, initial logo and company name integration into hero section, call to action below the hero image.
+-   **Tools:** HTML/CSS, Midjourney for image generation, GIMP for image editing, Strata template (HTML5 UP).
+-  **Psychological Considerations:** Making use of the existing template structure, prioritization of function and information, clear calls to action.
+-   **Sales and Influence:** Use of color psychology in call to action, and placement of items with intent to lead to a conversion.
+-   **Files Created/Modified**: `index.html`, `custom.css`,
+    *   `index.html` - Initial version
+    *   `custom.css` - Added initial CSS for hero styling and logo placement
+
+## Session 5: Background Image Selection and Main Section Restructuring (Dec 29, 2024)
+
+-   **Action:** Evaluated several AI-generated background images based on color psychology principles, refined main section layout to improve scannability.
+-   **Output:** Selection of optimal AI-generated background image, restructured main page content using a grid layout and more white space, logo and company name styling continued for clarity, call to action button style adjustments.
+-   **Tools:** HTML/CSS, AI Image Generation tools, and Gimp for image editing
+-   **Psychological Considerations:** Using visual hierarchy, appropriate white space, proper color psychology (blue for trust, red for action) and the Gestalt principle to organize elements for ease of use.
+-   **Sales and Influence:** Using color psychology to increase conversions.
+-   **Files Created/Modified:** `index.html`, `custom.css`, `main.css`
+    *   `index.html`- Modified to place correct content into correct location.
+    *   `custom.css` - added properties for the logo and main page content.
+    *   `main.css` - included to document initial template styles.
+
+## Session 6: Logo Refinement, Main Content, and Vendor Logos (Dec 29, 2024)
+
+-   **Action:** Adjusted the company name font and color to increase visibility, added vendor logos to the main page to increase social proof, and addressed the issues with image paths to ensure that they worked as expected.
+-   **Output:** The company name is visible, a clear social proof section is included on the main page, correct filepaths to the images.
+-   **Tools:** GIMP, HTML/CSS
+-   **Psychological Considerations:** Implementation of authority and social proof via recognizable logos, emphasis on clarity.
+-   **Sales and Influence:** Utilizing social proof from notable companies to increase trust and conversions
+-   **Files Created/Modified:** `index.html`, `custom.css`, `main.css`
+    *   `index.html`- Modified to include vendor logos
+    *   `custom.css` - modified to reflect call to action styling
+   * `main.css` - included to document initial template styles.
+
+## Session 7: Portfolio and Content Strategy (Dec 29, 2024)
+
+-   **Action:** Refined content strategy, shifted focus from case studies to educational content, explored options for showcasing AZ-104 learning journey, researched audience preferences, and technical content reframing.
+-   **Output:** Identified content options (guides, blogs, infographics), determined the need for clear explanations to build credibility.
+-   **Tools:** None at this stage
+-   **Psychological Considerations:** Building trust with technical accuracy and clear explanations, understanding target audience needs.
+-   **Sales and Influence:** Focus on educating and building authority to improve conversions.
+-   **Files Created:** `portfolio-progress-journal.md`, `portfolio_creation_progress_journal.md`, `portfolio-progress-journal.-v2.md`
+    -   `portfolio-progress-journal.md` - *Content:* initial notes for portfolio strategy
+    -   `portfolio_creation_progress_journal.md` - *Content:* portfolio strategy and audience preference research
+    -   `portfolio-progress-journal.-v2.md` - *Content:* detailed notes for developing portfolio content
+
+## Session 8: Vendor Logo and Spacing Correction, Call To Action Styling (Dec 29, 2024)
+
+-   **Action:** Removed certification logos from the vendor section, created an "About" section feature, added a "Why Choose Us" section, and addressed issues with spacing.
+-   **Output:** Corrected positioning of the logos, added "Why Choose Us" section.
+-   **Tools:** HTML/CSS
+-   **Psychological Considerations:** Focused on using data and authority to build trust, and making use of a call to action.
+-   **Sales and Influence:** Use of social proof through logo placement and a focus on expertise through certificates.
+-   **Files Created/Modified:** `index.html`, `custom.css`,
+    *   `index.html` - Add the why choose section and remove the certification logos from tech list
+    *   `custom.css` - Fix button style, fix vendor logo color and size
+
+## Session 9:  Header Overlap Fix and Image Path Corrections (Dec 29, 2024)
+
+-   **Action:** Resolved header overlap issue, updated image paths in HTML.
+-   **Output:** Hero image no longer overlaps content when scrolling, all vendor logos in the correct positions and color.
+-   **Tools**: HTML/CSS
+-   **Psychological Considerations**: Maintained focus on readability, usability, a focus on clarity and consistency.
+-   **Sales and Influence**: By providing a better design and navigation, conversions should increase.
+-   **Files Created/Modified:** `index.html`, `custom.css`, `main.css`
+   *   `index.html` - Corrected image paths.
+    *   `custom.css` - Corrected header overlap and logo sizing
+   *   `main.css` - Original Strata template
+
+## Session 10:  Logo Placement, CSS Overwrite Issue Resolved, Spacing and Sizing (Dec 29, 2024)
+
+-   **Action:** Addressed the vendor logo sizing and spacing using `!important` and more specific styling.
+-   **Output:** Logos are now sized correctly, in color, and appropriately spaced. Spacing at the top of the main section is corrected.
+-   **Tools:** HTML/CSS
+-   **Psychological Considerations**: Maintain a sense of professionalism, high quality and expertise.
+-   **Sales and Influence**: Consistent brand image builds trust and reliability.
+-   **Files Created/Modified:** `custom.css`
+    *   `custom.css`- Resolved logo issues
+
+## Session 11: About page title change, (Dec 29, 2024)
+
+   - **Action:** Changed the about page title based on marketing strategy.
+   - **Output:** Set the page title to `Guided By a Seasoned Expert`.
+    - **Psychological Considerations**: Using authority to build trust and highlight the level of skill and expertise.
+    - **Sales and Influence:** Creates a sense of security and reliability and suggests deep knowledge.
+   -   **Files Created/Modified:** `about.html`
+       *   `about.html`: updated page title
+
+## Session 12: Certifications and Achievements Update (Dec 29, 2024)
+
+-   **Action:** Corrected certification names, removing `AZ-104` and `CEH v7`, changed it to `Azure Certified` and `CEH`
+-   **Output:** Certifications are now correctly displayed
+-   **Tools:** HTML
+-   **Psychological Considerations:** Making sure that qualifications are presented correctly and that they instill a sense of expertise
+ -    **Sales and Influence:** Creates an accurate depiction of skills to further influence the client.
+-   **Files Created/Modified:** `about.html`
+    *   `about.html` - Corrected Certification names
+
+## Session 13: Experience level correction (Dec 29, 2024)
+
+*   **Action:** Corrected all instances of experience from `over 30 years` to `over 20 years`
+*   **Output:** Corrected the website copy.
+*   **Tools:** HTML
+*   **Psychological Considerations:** Accuracy is important for building trust
+*   **Sales and Influence**: Clear communication shows professionalism, building trust and credibility
+    * **Files Created/Modified:** `index.html`, `about.html`
+     - `index.html` - Corrected experience to 20 years in the why choose section.
+     - `about.html` - Corrected the years of experience for Andre Pascal
+
+## Session 14: Logo Banner Reengineering (Dec 29, 2024)
+
+    -   **Action**: Create a reminder to reengineer the logo into a banner at a later time
+   -    **Output**: A reminder has been created for future implementation.
+    -    **Psychological Considerations**: None, this is a note for future design.
+    -   **Sales and Influence:** None, this is a note for future design
+    - **Files created/Modified**: Updated log to include this item.
+
+## Session 15: Implemented Story Telling and a Success metric (Dec 29, 2024)
+
+   -   **Action:** Implement social proof and a success metric in the homepage, and added a short success story to the about page to highlight the value of the service
+   -   **Output:** Homepage and about page now have content that emphasize a customer centric approach
+     -   **Psychological Considerations**: Adding elements of social proof, authority, and human connection.
+    -   **Sales and Influence**: Provides tangible data, and emotional connection to create a need for services
+    -    **Files Created/Modified**: `index.html`, `about.html`
+        *   `index.html` Updated to include a new headline and statistic in "Why Choose Us Section"
+        *   `about.html` Added a short story in a new section to showcase success.
+
+## Session 16: Corrected the certification names and styling for the About Page (Dec 29, 2024)
+
+   -   **Action:** Updated certification names to `Azure Certified` and `CEH`
+    -   **Output:** Certifications names are correct
+   -    **Psychological Considerations**: Accuracy and clear communication
+   -    **Sales and Influence**: Clear communication builds trust and makes your site look more professional
+   -    **Files Created/Modified**: `about.html`
+       * `about.html`: Corrected the certificate names
+
+## Session 17: Correction of Index.html and the custom.css file (Dec 29, 2024)
+
+   -  **Action:** Fixed the structure of `index.html` and corrected the `custom.css` file to implement the correct styling and filepaths for the images.
+    - **Output**:  The structure and functionality of the home page is restored and the image sizing, spacing and color is corrected.
+    -   **Psychological Considerations**: Maintain a sense of professionalism, high quality and expertise.
+    - **Sales and Influence**: Consistent design builds trust and reliability and allows visitors to focus on the content.
+    -   **Files Created/Modified:** `index.html`, `custom.css`
+      *   `index.html`- Corrected structural issues
+      *   `custom.css` - Corrected styling issues
+
+## Session 18: Corrected Email Address and Mitigating Bias, (Dec 29, 2024)
+
+  *  **Action:**  Set email to be `hello@prismedgetech.com` and emphasized the need to mitigate bias.
+  *  **Output:**  All subsequent actions should emphasize the value and focus on solutions, rather than personal characteristics. The email is a clear business email address.
+   *   **Psychological Considerations:** To use language and imagery to appeal to people from all backgrounds.
+   *   **Sales and Influence:** Focus on the professional skills of the organization while building trust.
+
+## Session 19: Added Navigation Bar (Dec 29, 2024)
+   -   **Action:** Added a navigation bar at the top of the page to provide a better way to navigate.
+  * **Output**: All pages now have a visible and usable navigation
+    *   **Psychological Considerations:** Familiar design reduces cognitive load.
+    *   **Sales and Influence:** Improves usability and hence makes it easier for visitors to stay on site.
+   *    **Files Created/Modified**: `index.html`, `about.html`, `services.html`, `custom.css`
+       *   `index.html`: Removed old navigation properties and included the new navigation.
+       *   `about.html`: added a navigation bar at the top
+        *  `services.html`: added a navigation bar at the top
+       *   `custom.css`: added correct styling for the links
+
+## Session 20: Updated navigation properties, and logo (Dec 30, 2024)
+   -  **Action:**  Removed the text from the logo, and implemented correct style to the navigation
+    -  **Output:** Logo now fits banner better, navigation is styled correctly.
+   -    **Psychological Considerations**:  We are using clear and familiar styles and navigation to ensure that visitors are not confused.
+  -  **Sales and Influence:**  Clear design makes information more accessible, promoting conversions.
+    *   **Files Created/Modified:** `index.html`, `about.html`, `services.html`, `custom.css`
+        *   `index.html`: updated to include banner and remove redundant company name.
+        *   `about.html`: updated to include banner and remove redundant company name
+        *   `services.html` updated to include banner and remove redundant company name
+        *   `custom.css`: Updated the css for logo and navigation properties
+
+## Session 21: Spacing Fixes in Header (Dec 30, 2024)
+
+   - **Action**: I have removed the max-width property from the logo container. I also have applied padding to the header element to ensure proper spacing of the banner and navigation.
+   -    **Output**:  The banner and navigation bar are displayed correctly.
+  -    **Psychological Considerations**: Good spacing helps readability and reduces visual clutter.
+  -   **Sales and Influence:** Clean website design makes your site look professional.
+    *    **Files Created/Modified**: `custom.css`
+     *   `custom.css` - Corrected properties for header and logo spacing
+
+## Session 22: Logo Banner Adjustment and Navigation Refinement (Dec 30, 2024)
+ -   **Action**: Adjusted the logo banner using a new approach, moved the navigation to the left, made the navigation bar sticky and added additional pages.
+    -   **Output**: The logo banner is now properly sized and centered within the header, navigation bar is now correctly placed, additional links are included.
+   -    **Psychological Considerations**:  We are using clear and familiar styles and navigation to ensure that visitors are not confused.
+  -  **Sales and Influence:**  Clear design makes information more accessible, promoting conversions.
+    *   **Files Created/Modified:** `index.html`, `about.html`, `services.html`, `custom.css`
+        *   `index.html`: Updated to include the new navigation container.
+        *   `about.html`: Updated to include the new navigation container
+        *   `services.html` Updated to include the new navigation container
+        *   `custom.css`: Updated the styling for navigation properties, and adjusted the logo banner.
+   * **Additional Notes:** This section has included a lot of effort into getting the navigation and spacing correct, but it is still experiencing problems.
+
+## Files Submitted and Their Content (Updated)
+
+**1. `code (4).txt`:**
+   - *Type*: Text file (Progress Log).
+   - *Content:* Website creation progress log including the use of Midjourney for image generation, using the Strata template, and other tools.
+   - *Settings:* N/A (plain text).
+
+**2. `code (3).txt`:**
+   - *Type*: Text file (Progress Log).
+   - *Content:* Website creation progress log including a selection of a template and the generation of hero images using Midjourney.
+   - *Settings:* N/A (plain text).
+
+**3. `code (2).txt`:**
+   - *Type*: Text file (Progress Log).
+   - *Content:* Website creation progress log including drafting AI prompts and narrowing down template selection.
+   - *Settings:* N/A (plain text).
+
+**4. `code.txt`:**
+   - *Type*: Text file (Progress Log).
+   - *Content:* Initial website creation progress log including site mapping and content tracking.
+   - *Settings:* N/A (plain text).
+
+**5. `code (1).txt`:**
+   - *Type*: Text file (Progress Log).
+   - *Content:* Website creation progress log including template selection and AI design planning.
+   - *Settings:* N/A (plain text).
+
+**6. `Website design.txt`:**
+   - *Type*: Text file (Design principles).
+   - *Content:* Website structure and navigation details with design and psychology principles, color psychology and other usability notes.
+   - *Settings:* N/A (plain text).
+
+**7. `design.txt`:**
+   - *Type*: Text file (Design Priorities).
+   - *Content:* Details of design priorities including, visual hierarchy, emotional engagement, simplicity, and accessibility. Also contains information for color and contrast.
+   - *Settings:* N/A (plain text).
+
+**8. `index.html`:**
+   - *Type*: HTML file (Website homepage structure).
+   - *Content:* HTML5 structure for a website including hero section, service and AI content sections and vendor logos, and a `Why Choose Us Section` with accurate asset paths, a navigation bar at the top and a proper structure.
+   - *Settings:* HTML5 structure, grid-based layout using "Strata" template CSS, includes `custom.css`, and font awesome libraries
+
+**9. `custom.css`:**
+   - *Type*: CSS file (Website Custom styling).
+   - *Content:* Includes custom styling for the header, logo, main page content, icons and call to action buttons, correct styling for responsiveness, all based on psychological design principles
+   - *Settings:* CSS for controlling style, layout, colors, fonts, whitespace, and responsiveness.
+
+**10. `fontawesome-all.min.css`:**
+    - *Type:* CSS file
+    - *Content:* Contains the full font awesome library
+
+**11. `main.css`:**
+   - *Type*: CSS file (Main template CSS).
+   - *Content:* Contains core CSS for the Strata template.
+   - *Settings:* N/A.
+
+**12. `site_data-bak.yaml.txt`:**
+    - *Type:* Text file containing YAML structure (Site Data).
+    - *Content:* Data file containing information such as company name, logo, purpose, key services, target market, USP, customer profile, homepage sections, services overview, AI section, and more for a website.
+    - *Settings:* YAML document used for planning site content structure and organization.
+
+**13. `Brand vision .txt`:**
+   - *Type*: Text file (Brand Vision).
+   - *Content:* Brand vision statement, core values, offerings, and positioning strategy.
+   - *Settings:* Plain text for brand guidelines.
+
+**14. `marketing-principles.txt`:**
+    -*Type*: Text file (Marketing Strategies).
+    -*Content*: Marketing principles including StoryBrand, SPIN, Challenger and Commercial Teaching models and more.
+    -*Settings*: Plain Text used to inform marketing strategy.
+
+**15. `web-design-principles.txt`:**
+   - *Type*: Text file (Web Design Strategies)
+   - *Content:* Contains detailed concepts, strategies, and psychological elements.
+   - *Settings:* Plain Text used to inform all aspects of design.
+
+**16. Background Image Options (Images)**
+     -*Type:* Multiple Images
+     -*Content:* Images provided to select the correct background based on color psychology.
+
+**17. Vendor logos (Images):**
+    *Type:* Multiple Images
+   -*Content:* Images from various technology vendors used for social proof
+
+**18. `portfolio-progress-journal.md`:**
+    -*Type:* Text File
+    -*Content:* Initial notes for portfolio strategy
+    -*Settings:* Markdown format used to keep a structured text document
+
+**19. `portfolio_creation_progress_journal.md`:**
+    -*Type:* Text File
+    -*Content:* portfolio strategy and audience preference research.
+    -*Settings:* Markdown format used to keep a structured text document
+
+**20. `portfolio-progress-journal.-v2.md`:**
+    -*Type:* Text File
+    -*Content:* Detailed notes for developing portfolio content.
+    -*Settings:* Markdown format used to keep a structured text document
+
+**21. `system instructions .txt`:**
+ - *Type*: Text File
+ - *Content*: Guidelines for how I am supposed to help
+ - *Settings*: Plain text used for context
+
+**22.  `website-reccomendation.txt`**:
+   -  *Type:* Text File
+   -  *Content*:  Provides recommendations for improvements for messaging, authority, social proof and usability.
+   -  *Settings*: Plain text
+**23. `about.html`:**
+   - *Type*: HTML file (Website about page structure).
+   - *Content:* HTML5 structure for a website including an About section, Team Profile section, a core values, a technology section, certification and acheivment sections and a Why Choose Us section, with new navigation bar.
+   - *Settings:* HTML5 structure, grid-based layout using "Strata" template CSS, includes `custom.css`, and font awesome libraries
+**24. `services.html`:**
+  -*Type*: HTML file (Website services page structure).
+  - *Content:* HTML5 structure for a website including the services offered with corresponding icons, and a call to action buttons, also including a technical section, with new navigation bar.
+   - *Settings*: HTML5 structure, grid-based layout using "Strata" template CSS, includes `custom.css`,  and font awesome libraries
+**25. `index.html`:**
+   - *Type*: HTML file (Website homepage structure).
+   - *Content:* HTML5 structure for a website including hero section, service and AI content sections and vendor logos, and a `Why Choose Us Section` with accurate asset paths, a navigation bar at the top
+   - *Settings:* HTML5 structure, grid-based layout using "Strata" template CSS, includes `custom.css`,  and font awesome libraries
+
+**26. `march.txt`:**
+  -*Type:* Text File.
+   -*Content*: Outlines the priorities for web site development.
+    -*Settings*: Plain text.
+
+**27. Current logo banner image**:
+ - *Type:* Image file.
+   -*Content:* Logo banner image file.
+    -*Settings*: png image file.
+
+**28. `Content needed for site (1).txt`:**
+    -*Type:* Text File
+    -*Content:* Lists content needed for the website.
+    -*Settings*: Plain text file.
+
+**29. `site_data.yaml.txt`:**
+     -*Type:* Text file containing YAML structure (Site Data).
+    -*Content:* Data file containing information such as company name, logo, purpose, key services, target market, USP, customer profile, homepage sections, services overview, AI section, and more for a website.
+    -*Settings:* YAML document used for planning site content structure and organization.
+
+**30. `web-design-principles.txt`:**
+   - *Type*: Text file (Web Design Strategies)
+   - *Content:* Contains detailed concepts, strategies, and psychological elements.
+   - *Settings:* Plain Text used to inform all aspects of design.
+
+ **31. `WEBdesign.txt`**:
+   -  *Type:* Text File
+   -  *Content*:  Contains information on how to design good websites and includes many psychological elements that must be considered.
+   -  *Settings*: Plain text.
+
+**32. Corrected logo banner image**:
+ - *Type:* Image file.
+   -*Content:* Logo banner image file with fixed cropping and dimensions.
+    -*Settings*: png image file.
+
+**33. `custom.css`**:
+   -  *Type:* CSS file
+   -  *Content*:  Contains all of the CSS for the website, including all of the changes that have been made.
+   -  *Settings*: CSS.
+
+**34. `index.html`**:
+   -  *Type:* HTML file
+   -  *Content*:  The most recent version of the index.html file.
+   -  *Settings*: HTML.
