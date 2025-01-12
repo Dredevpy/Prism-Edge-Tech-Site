@@ -2577,38 +2577,27 @@ input, select, textarea {
 
 /* Header */
 
-	#header {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-moz-align-items: -moz-flex-end;
-		-webkit-align-items: -webkit-flex-end;
-		-ms-align-items: -ms-flex-end;
-		align-items: flex-end;
-		-moz-justify-content: space-between;
-		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between;
-		justify-content: space-between;
-		background-color: #1f1815;
-		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-		background-position: top left,							top left;
-		background-repeat: repeat,								no-repeat;
-		background-size: auto,								150%;
-		color: rgba(255, 255, 255, 0.5);
-		height: 100%;
-		left: 0;
-		padding: 8em 4em;
-		position: fixed;
-		text-align: right;
-		top: 0;
-		width: 35%;
-	}
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #1f1815;
+    background-attachment: scroll, scroll;
+    background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+    background-position: top left, top left;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, 150%;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 1em 4em; 
+    position: fixed; /* Keep header fixed */
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+}
+
+
 
 		#header > * {
 			-moz-flex-shrink: 0;
@@ -2683,8 +2672,15 @@ input, select, textarea {
 			}
 
 /* Main */
-
+#main {
+	padding-top: 0px; /* Add padding to account for fixed header height */
+	margin-left: 35%;
+	max-width: 54em;
+	padding: 8em 4em 4em 4em;
+	width: calc(100% - 35%);
+}
 	#main {
+		padding-top: 80px; /* Add padding to account for fixed header height */
 		margin-left: 35%;
 		max-width: 54em;
 		padding: 8em 4em 4em 4em;

@@ -37,6 +37,9 @@
 /* General Body Styles */
 body {
 		color:#000;
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* Hero Button Styling */
@@ -65,23 +68,41 @@ body {
      z-index: 2;
     display: flex;
     align-items: center;
-  margin-top: 14px;
+    margin-top: 14px;
+    padding: 0 4em;
+        display:flex;
+    justify-content: flex-start;
 }
 #header .logo-container a {
     display: block;
     width: 100%;
     text-decoration: none;
+}
+.navBar-container {
+    width: 100%;
+    position: relative; /* remove absolute positioning */
+    top: 0;
+    z-index: 1001; 
+    height: 64px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    padding-top: 10px;
+    background-color: transparent;
+}
+.navBar ul li a {
+    color: white !important; /* Set text color to white */
+    text-decoration: none;
+    font-size: 1.3rem; /* Increased font size */
+    padding: 8px 0;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+    transition: color 0.2s ease;
+}
 
-}
 /* Company Name Styling */
-#header .logo-container .company-name {
-    color: #ffffff;
-    font-size: 2.2em;
-    font-family: 'HK Modular', sans-serif;
-    margin-left: 0.5em;
-    margin-top: 0;
-    font-weight: normal;
-}
+
 
 /* Logo Styling */
 
@@ -129,18 +150,34 @@ body {
 
 /* Remove body background and z-index */
 
-body {
-		color:#000;
-}
 #main {
-    margin-top: 30px !important;
-    padding-top: 50px !important;
-     margin-left: 35%;
+    margin-top: 0px !important;
+    padding-top: 10px !important;
     width: calc(100% - 35%);
 }
 
+#header-container {
+    position: absolute;
+    top: 0;
+    left: 0; /*Added to ensure container is positioned correctly*/
+    z-index: 1001;
+    height: 100vh; /* Added to span the full viewport height */
+    background-color: #1f1815;
+		background-attachment: scroll,								scroll;
+		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-position: top left,							top left;
+		background-repeat: repeat,							no-repeat;
+		background-size: auto,							150%;
+     width: 35%;
+           display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+        justify-content: space-between;
+}
+
 #header {
-       display: -moz-flex;
+      padding: .5em 4em;
+	    display: -moz-flex;
         display: -webkit-flex;
         display: -ms-flex;
         display: flex;
@@ -156,21 +193,14 @@ body {
         -webkit-justify-content: space-between;
         -ms-justify-content: space-between;
         justify-content: space-between;
-        background-color: #1f1815;
-		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-		background-position: top left,							top left;
-		background-repeat: repeat,								no-repeat;
-		background-size: auto,								150%;
-		color: rgba(255, 255, 255, 0.5);
-        height: 100%;
-        left: 0;
-        padding: .5em 4em;
-        position: fixed;
-        text-align: right;
+         color: rgba(255, 255, 255, 0.5);
+           text-align: right;
+         width: 100%;
+         height: auto; /* Remove height constraint for header*/
+        position: relative;
+            left: 0;
         top: 0;
-        width: 35%;
-    z-index: 1; /* Ensure the header is on top */
+        
 }
 
 /* Vendor Logo Styling */
@@ -194,17 +224,17 @@ body {
     flex-direction: column !important;
 }
 /* Header navigation links */
-#navBar-container{
+.navBar-container{
     width: 100%;
-    position: sticky;
+     position: relative;
         top: 0;
-    z-index: 1000;
-    height: 64px; /* Increased for better visual weight */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); /* Subtle shadow for depth */
+    z-index: 2;
+    height: 64px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
        padding-top: 10px;
 }
 
-#navBar ul {
+.navBar ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -212,54 +242,100 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    max-width: 1200px; /* Contains content width */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
+    position: relative;
 }
 
-#navBar ul li {
-    margin-left: 32px; /* More spacing between items */
-}
+.navBar ul li {
+    margin-left: 32px;
+    color: #2D3748 !important;
+        text-decoration: none;
+        font-size: 1.1rem;
+        padding: 8px 0;
+        border: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        text-transform: capitalize;
+        position: relative;
+        transition: color 0.2s ease
+    }
 
-#navBar ul li a {
-    color: #2D3748 !important; /* Dark gray for better readability */
-    text-decoration: none;
-    font-size: 1.1rem; /* Slightly smaller for sophistication */
-    padding: 8px 0;
-    border: none;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500; /* Medium weight for better balance */
-    text-transform: capitalize; /* More modern than all uppercase */
-    position: relative; /* For hover effect */
-    transition: color 0.2s ease;
-}
 
-#navBar ul li a::after {
+
+
+.navBar ul li a::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #e43f5a; /* Red for trust and professionalism */
+    background-color: #e43f5a;
     transform: scaleX(0);
     transition: transform 0.2s ease;
 }
 
-#navBar ul li a:hover {
-    color: #e43f5a !important; /* Matching red on hover */
+.navBar ul li a:hover {
+    color: #e43f5a !important;
     text-decoration: none;
 }
 
-#navBar ul li a:hover::after {
+.navBar ul li a:hover::after {
     transform: scaleX(1);
 }
 
 /* Active state for current page */
-#navBar ul li a.active {
+.navBar ul li a.active {
     color: #e43f5a !important;
+     font-weight: bold;
 }
 
-#navBar ul li a.active::after {
+.navBar ul li a.active::after {
     transform: scaleX(1);
+     background-color: #e43f5a;
 }
+@media screen and (max-width: 1280px) {
+
+        /* Main */
+
+            #main {
+                 margin-left: 0;
+            width: 100%;
+                 padding-top: 50px !important;
+            }
+  
+}
+    /* Fixed Header Styles (Copied from v1 and adjusted) */
+    #header {
+        position: fixed; /* Make the header fixed */
+        top: 0; /* Stick it to the top */
+        left: 0; /* Stick it to the left */
+        width: 35%; /* Maintain the width from the original design */
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -moz-align-items: -moz-flex-end;
+        -webkit-align-items: -webkit-flex-end;
+        -ms-align-items: -ms-flex-end;
+        align-items: flex-end; /* Align content to the right */
+        -moz-justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -ms-justify-content: space-between;
+        justify-content: space-between; /* Distribute space between header elements */
+        color: rgba(255, 255, 255, 0.5); /* Set text color to be light */
+        text-align: right; /* Align text to the right */
+        background-color: #1f1815; /* Dark background color */
+        background-attachment: scroll, scroll; /* background scroll */
+        background-image: url("images/overlay.png"), url("../../images/bg.jpg"); /* Background images */
+        background-position: top left, top left; /* Position of background */
+        background-repeat: repeat, no-repeat; /* Repeat/no-repeat behavior */
+        background-size: auto, 150%; /* Background image size */
+         height: 100%;  /* set height to 100% of viewport*/
+    }
