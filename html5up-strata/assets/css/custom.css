@@ -105,7 +105,9 @@ body {
     position: relative;
     transition: color 0.2s ease;
 }
-
+.navBar a.active {
+    color: #ff0000; /* Example active color */
+}
 /* Company Name Styling */
 
 
