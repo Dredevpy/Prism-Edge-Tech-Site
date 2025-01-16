@@ -1,65 +1,49 @@
 $(document).ready(function () {
-    let isScrolling = false;
-    let navLinks = $('.navBar .nav-link');
+    let navLinks = $('.navBar a');
     let sections = $('section');
-    let currentSectionIndex = 0;
 
-    // Function to handle smooth scrolling
-    function smoothScroll(target) {
-        isScrolling = true;
-        const targetElement = document.querySelector(target);
-        if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
-        setTimeout(() => {
-            isScrolling = false;
-        }, 800);
-    }
+    // Function to show the section based on hash
+    function showSection() {
+      const hash = window.location.hash;
 
-
-        // Function to check which section is in the viewport and set the active link
-     function checkActiveSection() {
-        let closestSection = null;
-        let closestDistance = Infinity;
-            sections.each(function(index) {
-                const rect = this.getBoundingClientRect();
-                const distance = Math.abs(rect.top);
-
-                if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-                     if (distance < closestDistance) {
-                        closestDistance = distance;
-                        closestSection = this;
-                          currentSectionIndex = index;
-                     }
-                }
-            });
-            if(closestSection) {
-                setActiveNavLink(closestSection.id);
-            }
-    }
-
-
-    function setActiveNavLink(sectionId) {
+      // Hide all sections
+      sections.addClass('hide');
+       // Remove active class from all links
         navLinks.removeClass('active');
-        $(`.navBar a[href="#${sectionId}"]`).addClass('active');
+      if (hash) {
+        const targetSection = $(hash);
+           // Check if the target exists
+        if (targetSection.length) {
+        // Show the target section
+         targetSection.removeClass('hide');
+         // Add the active class
+            $(`.navBar a[href="${hash}"]`).addClass('active');
+         } else {
+                $('section').first().removeClass('hide');
+                 $('.navBar a').first().addClass('active');
+        }
+       } else {
+           // If no hash, show the first section
+             sections.first().removeClass('hide');
+            $('.navBar a').first().addClass('active');
+        }
     }
 
 
-    // Handle navigation clicks
-    navLinks.on('click', function (event) {
+
+    // Navigation link click handler
+    $('.navBar a').on('click', function (event) {
         event.preventDefault();
-        if(!isScrolling){
-             let target = $(this).attr('href');
-            smoothScroll(target);
-        }
+        const target = $(this).attr('href');
+          // Update the hash without triggering hashchange event
+        window.history.pushState(null, null, target);
+
+        showSection();
     });
 
+    // Hashchange event handler
+     $(window).on('hashchange', showSection);
 
-     // Check for active section on page load and scroll
-    checkActiveSection();
-    $(window).on('scroll', checkActiveSection);
-
-
-    // Restore default scrolling
-   $(window).off('wheel touchmove');
+    // Initialize on page load
+    showSection();
 });
