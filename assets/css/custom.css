@@ -14,20 +14,32 @@ html, body {
     display: block;
     max-width: 100%;
     height: auto;
-    /* margin: 2em auto 0; Removing the margin to see if that is the issue */
+    margin: 0 auto;
+    max-height: 300px; /* Constrain maximum height */
+    object-fit: cover; /* Ensure the image scales properly */
 }
 
 
 .inner {
     text-align: center;
 }
-
+#header .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto; /* Ensure no fixed height */
+    gap: 1em; /* Adds spacing between elements */
+    padding: 1em;
+}
 #header .inner h1 {
     color: #FFFFFF;
-    font-size: 2.5em;
+    font-size: 2em;  /* Modified: reduced to 2em (from 2.5em) */
     margin-top: 0.2em;
     text-align: center;
     font-weight: bold;
+       line-height: 1.35em; /* Added: Reduces line height*/
 }
 
 #header .inner .second_line {
@@ -40,7 +52,7 @@ html, body {
 #header .inner p {
     color: #CCCCCC;
     font-size: 1.2em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     text-align: center;
 }
 
@@ -64,6 +76,8 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    /* margin-top: 1em; REMOVED: margin-top*/
+        width: auto; /* Prevent unnecessary scaling */
 }
 
 #header .inner .button:hover {
@@ -152,7 +166,7 @@ body {
 	padding-top: 0px;
     margin-left: 35%;
 	max-width: 54em;
-	padding: 8em 4em 4em 4em;
+	padding: 5em 4em 4em 4em; /*Modified : added top padding*/
 	width: calc(100% - 35%);
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
@@ -162,10 +176,15 @@ body {
 #main > section {
     scroll-snap-align: start;
     border-top: solid 2px #efefef;
-    margin: 0; 
-    padding: 1em 0 0 0;
-
+    margin: 0;
+    padding: 0;
 }
+
+	#main > section:first-child {
+		border-top: 0;
+    margin-top: 0;
+		padding-top: 0;
+	}
 
         main > section:first-child {
     border-top: 0;
@@ -183,11 +202,12 @@ body {
     background-repeat: repeat, no-repeat;
     background-size: auto, 150%;
     width: 35%;
-    display: flex; /* Modified: use flexbox */
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space-between; /* Modified: space between */
-    height: 100vh;
+    justify-content: space-between;
+    height: 100vh; /* Constrain to viewport height */
+    overflow: hidden; /* Prevent content overflow */
 }
 
 /* Header styling for sticky header - Changed to left side and removed width*/
@@ -321,6 +341,211 @@ body {
             }
   
 }
+/* Form */
+form {
+    padding: 0 1em;
+}
+
+textarea {
+padding: 0.75em;
+}    
+
+label {
+    color: #787878;
+    display: block;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin: 0 0 1em 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: #f7f7f7;
+    border-radius: 0.35em;
+    border: solid 2px transparent;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 0.75em;
+    text-decoration: none;
+    width: 100%;
+}
+
+    input[type="text"]:invalid,
+    input[type="password"]:invalid,
+    input[type="email"]:invalid,
+    select:invalid,
+    textarea:invalid {
+        box-shadow: none;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus,
+    select:focus,
+    textarea:focus {
+        border-color: #49bf9d;
+    }
+
+select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23dfdfdf' /%3E%3C/svg%3E");
+    background-size: 1.25rem;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1rem) center;
+    height: 2.75em;
+    padding-right: 2.75em;
+    text-overflow: ellipsis;
+}
+
+    select option {
+        color: #787878;
+        background: #fff;
+    }
+
+    select:focus::-ms-value {
+        background-color: transparent;
+    }
+
+    select::-ms-expand {
+        display: none;
+    }
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    height: 2.75em;
+}
+
+textarea {
+    padding: 0.75em;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    background-color: transparent;
+    border-radius: 0.35em;
+    border: solid 3px #efefef;
+    color: #787878 !important;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    height: 3.15em;
+    height: calc(2.75em + 6px);
+    line-height: 2.75em;
+    min-width: 10em;
+    padding: 0 1.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    input[type="button"]:hover,
+    .button:hover {
+        border-color: #49bf9d;
+        color: #49bf9d !important;
+    }
+
+    input[type="submit"]:active,
+    input[type="reset"]:active,
+    input[type="button"]:active,
+    .button:active {
+        background-color: rgba(73, 191, 157, 0.1);
+        border-color: #49bf9d;
+        color: #49bf9d !important;
+    }
+
+    input[type="submit"].icon,
+    input[type="reset"].icon,
+    input[type="button"].icon:before,
+    .button.icon {
+        padding-left: 1.35em;
+    }
+
+        input[type="submit"].icon:before,
+        input[type="reset"].icon:before,
+        input[type="button"].icon:before,
+        .button.icon:before {
+            margin-right: 0.5em;
+        }
+
+    input[type="submit"].fit,
+    input[type="reset"].fit,
+    input[type="button"].fit,
+    .button.fit {
+        min-width: 0;
+        width: 100%;
+    }
+
+    input[type="submit"].small,
+    input[type="reset"].small,
+    input[type="button"].small,
+    .button.small {
+        font-size: 0.8em;
+    }
+
+    input[type="submit"].large,
+    input[type="reset"].large,
+    input[type="button"].large,
+    .button.large {
+        font-size: 1.35em;
+    }
+
+    input[type="submit"].primary,
+    input[type="reset"].primary,
+    input[type="button"].primary,
+    .button.primary {
+        background-color: #49bf9d;
+        border-color: #49bf9d;
+        color: #ffffff !important;
+    }
+
+        input[type="submit"].primary:hover,
+        input[type="reset"].primary:hover,
+        input[type="button"].primary:hover,
+        .button.primary:hover {
+            background-color: #5cc6a7;
+            border-color: #5cc6a7;
+        }
+
+        input[type="submit"].primary:active,
+        input[type="reset"].primary:active,
+        input[type="button"].primary:active,
+        .button.primary:active {
+            background-color: #3eb08f;
+            border-color: #3eb08f;
+        }
+
+    input[type="submit"].disabled, input[type="submit"]:disabled,
+    input[type="reset"].disabled,
+    input[type="reset"]:disabled,
+    input[type="button"].disabled,
+    input[type="button"]:disabled,
+    .button.disabled,
+    .button:disabled {
+        background-color: #e7e7e7 !important;
+        border-color: #e7e7e7 !important;
+        color: #b2b2b2 !important;
+        cursor: default;
+    }
     /* Fixed Header Styles (Copied from v1 and adjusted) */
    /* #header {
        position: fixed; 
@@ -382,3 +607,51 @@ body {
         #footer .copyright li a {
             color: inherit;
           }
+/* Fix label alignment within form*/
+.col-8 label {
+    display: inline-block;
+      width: 100px;
+      text-align: right;
+      padding-right: 10px;
+
+}
+@media screen and (max-width: 768px) {
+    .section {
+        max-width: 100%;
+        padding: 1em;
+    }
+
+    .button {
+        width: 80%; /* Make buttons responsive */
+        font-size: 0.9rem;
+    }
+}
+/* Parent container for cards or sections with buttons */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+    box-sizing: border-box;
+}
+
+
+/* Section alignment for each feature */
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1em; /* Consistent spacing between elements */
+    padding: 2em 1em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional for aesthetics */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%; /* Ensure sections take proper width */
+    max-width: 300px; /* Limit width for uniformity */
+    margin: 1em auto;
+    background-color: #fff; /* Optional */
+}
