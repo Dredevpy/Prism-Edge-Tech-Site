@@ -49,11 +49,19 @@ html, body {
     text-align: center;
 }
 
-#header .inner p {
-    color: #CCCCCC;
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-    text-align: center;
+#header .inner .button {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: #e43f5a; /* Modified: set call to action color */
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5em;
+        width: auto;
 }
 
 /* General Body Styles */
@@ -68,7 +76,7 @@ body {
 #header .inner .button {
     display: inline-block;
     padding: 1em 2em;
-    background-color: #49bf9d;
+    background-color: #e43f5a; /* Modified: set call to action color */
     color: #fff !important;
     text-decoration: none;
     border-radius: 5px;
@@ -76,8 +84,8 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 1em; REMOVED: margin-top*/
-        width: auto; /* Prevent unnecessary scaling */
+     margin-top: 0.5em;
+        width: auto;
 }
 
 #header .inner .button:hover {
@@ -166,29 +174,28 @@ body {
 	padding-top: 0px;
     margin-left: 35%;
 	max-width: 54em;
-	padding: 5em 4em 4em 4em; /*Modified : added top padding*/
+	padding: 4em;
 	width: calc(100% - 35%);
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
      scroll-behavior: smooth;
 }
 
+
 #main > section {
     scroll-snap-align: start;
     border-top: solid 2px #efefef;
     margin: 0;
-    padding: 0;
+    padding: 1em 0 0 0;
 }
 
-	#main > section:first-child {
-		border-top: 0;
-    margin-top: 0;
-		padding-top: 0;
-	}
-
-        main > section:first-child {
+#main > section:first-child {
     border-top: 0;
+margin-top: 0;
+    padding-top: 0;
 }
+
+
 /* Header container for sticky header - Changed to left side and removed height*/
 #header-container {
     position: fixed;
@@ -212,31 +219,31 @@ body {
 
 /* Header styling for sticky header - Changed to left side and removed width*/
 #header {
-      padding: .5em 4em;
-	    display: -moz-flex;
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-        -moz-flex-direction: column;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -moz-align-items: -moz-flex-end;
-        -webkit-align-items: -webkit-flex-end;
-        -ms-align-items: -ms-flex-end;
-        align-items: flex-end;
-        -moz-justify-content: space-between;
-        -webkit-justify-content: space-between;
-        -ms-justify-content: space-between;
-        justify-content: space-between;
-         color: rgba(255, 255, 255, 0.5);
-           text-align: right;
-            width: 100%;
-         height: auto; 
-        position: relative; /* Modified: Changed to relative */
-            left: 0;
-        top: 0;
-        
+    padding: .5em 4em;
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      -moz-flex-direction: column;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -moz-align-items: -moz-flex-end;
+      -webkit-align-items: -webkit-flex-end;
+      -ms-align-items: -ms-flex-end;
+      align-items: flex-end;
+      -moz-justify-content: space-between;
+      -webkit-justify-content: space-between;
+      -ms-justify-content: space-between;
+      justify-content: space-between;
+       color: rgba(255, 255, 255, 0.5);
+         text-align: right;
+          width: 100%;
+       height: auto; 
+      position: relative;
+          left: 0;
+      top: 0;
+      
 }
 
 /* Vendor Logo Styling */
@@ -343,40 +350,37 @@ body {
 }
 /* Form */
 form {
+    margin: 0 0 2em 0;
     padding: 0 1em;
+    display:flex;
+    flex-direction: column;
 }
 
+
 textarea {
-padding: 0.75em;
-}    
+    padding: 0.75em;
+     border: solid 2px #efefef;
+     border-radius: 0.35em;
+     margin-bottom: 1em; /* Added margin bottom*/
+	}  
 
 label {
     color: #787878;
     display: block;
     font-size: 0.9em;
     font-weight: 400;
-    margin: 0 0 1em 0;
-}
+    margin: 0 0 0.5em 0; /* Modified: reduce margin*/
+    }
 
 input[type="text"],
 input[type="password"],
 input[type="email"],
 select,
 textarea {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    background: #f7f7f7;
-    border-radius: 0.35em;
-    border: solid 2px transparent;
-    color: inherit;
-    display: block;
-    outline: 0;
-    padding: 0 0.75em;
-    text-decoration: none;
-    width: 100%;
-}
+    padding: 0.75em;
+     border: solid 2px #efefef;
+     border-radius: 0.35em;
+	}
 
     input[type="text"]:invalid,
     input[type="password"]:invalid,
@@ -394,15 +398,15 @@ textarea {
         border-color: #49bf9d;
     }
 
-select {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23dfdfdf' /%3E%3C/svg%3E");
-    background-size: 1.25rem;
-    background-repeat: no-repeat;
-    background-position: calc(100% - 1rem) center;
-    height: 2.75em;
-    padding-right: 2.75em;
-    text-overflow: ellipsis;
-}
+    select {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23dfdfdf' /%3E%3C/svg%3E");
+        background-size: 1.25rem;
+        background-repeat: no-repeat;
+        background-position: calc(100% - 1rem) center;
+        height: 2.75em;
+        padding-right: 2.75em;
+        text-overflow: ellipsis;
+    }
 
     select option {
         color: #787878;
@@ -417,6 +421,7 @@ select {
         display: none;
     }
 
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -426,6 +431,12 @@ select {
 
 textarea {
     padding: 0.75em;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    height: 2.75em;
 }
 input[type="submit"],
 input[type="reset"],
@@ -455,6 +466,29 @@ input[type="button"],
     text-decoration: none;
     white-space: nowrap;
 }
+input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    input[type="button"]:hover,
+    .button:hover {
+        border-color: #49bf9d;
+        color: #49bf9d !important;
+    }
+
+    input[type="submit"]:active,
+    input[type="reset"]:active,
+    input[type="button"]:active,
+    .button:active {
+        background-color: rgba(73, 191, 157, 0.1);
+        border-color: #49bf9d;
+        color: #49bf9d !important;
+    }
+
+    input[type="submit"].icon,
+    input[type="reset"].icon,
+    input[type="button"].icon:before,
+    .button.icon {
+        padding-left: 1.35em;
+    }
 
     input[type="submit"]:hover,
     input[type="reset"]:hover,
@@ -592,19 +626,19 @@ input[type="button"],
 		margin: 1em 0 0 0;
 		padding: 0;
     }
-      #footer .copyright li {
+    #footer .copyright li {
         border-left: solid 1px rgba(255, 255, 255, 0.25);
         display: inline-block;
         line-height: 1em;
         margin-left: 0.75em;
         padding-left: 0.75em;
       }
-        #footer .copyright li:first-child {
-            border-left: 0;
-            margin-left: 0;
-            padding-left: 0;
-          }
-        #footer .copyright li a {
+      #footer .copyright li:first-child {
+        border-left: 0;
+        margin-left: 0;
+        padding-left: 0;
+      }
+          #footer .copyright li a {
             color: inherit;
           }
 /* Fix label alignment within form*/
@@ -613,6 +647,7 @@ input[type="button"],
       width: 100px;
       text-align: right;
       padding-right: 10px;
+      margin-bottom: 0;/* Modified: remove margin-bottom*/
 
 }
 @media screen and (max-width: 768px) {
@@ -654,4 +689,15 @@ input[type="button"],
     max-width: 300px; /* Limit width for uniformity */
     margin: 1em auto;
     background-color: #fff; /* Optional */
+}
+#main section > .major h2 { 
+    text-align: center;
+    font: bold 1em/1.5 inherit;  /* if you want to keep the existing font size and family */
+}
+
+#header .inner p {
+    color: #ffffff; /* Modified: set text color to white for better contrast */
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    text-align: center;
 }

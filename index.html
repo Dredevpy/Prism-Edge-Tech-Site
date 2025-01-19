@@ -364,45 +364,65 @@
     </section>
 
         <!-- Contact Section -->
-    <section id="contact" class="hide" data-section="4">
-        <header class="major">
-            <h2>Get In Touch</h2>
-        </header>
-        <p>We would love to hear from you. Please fill out the form below, or contact us directly. We aim to respond within 24 hours</p>
-  
-        <div class="row">
-            <div class="col-8 col-12-small">
-                <form method="post" action="#">
-                    <div class="row gtr-uniform gtr-50">
-                        <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                        <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                        <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                    </div>
-                </form>
-                <ul class="actions">
-                    <li><input type="submit" value="Send Message" /></li>
-                </ul>
+        <!-- Contact Section -->
+        <section id="contact" class="hide" data-section="4">
+            <header class="major">
+                <h2>Get In Touch</h2>
+            </header>
+            <p>We would love to hear from you. Please fill out the form below, or contact us directly. We aim to respond within 24 hours</p>
+      
+            <div class="row">
+                <div class="col-8 col-12-small">
+                    <form method="post" action="#">
+                         <p>
+                          Please fill out the form below to send us a message.
+                         </p>
+                        <div class="row gtr-uniform gtr-50">
+                            <div class="col-6 col-12-xsmall">
+                            <label for="contact-name">Name</label>
+                            <input type="text" name="name" id="contact-name" placeholder="Your Name" required />
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                               <label for="contact-email">Email</label>
+                            <input type="email" name="email" id="contact-email" placeholder="your@email.com" required />
+                            </div>
+                            <div class="col-12">
+                               <label for="contact-message">Message</label>
+                               <textarea name="message" id="contact-message" placeholder="Your Message" rows="4"></textarea>
+                            </div>
+                            <div class="col-12 submit">
+                              <input type="submit" value="Send Message" class="button primary" />
+                               </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-4 col-12-small">
+                    <ul class="labeled-icons">
+                        <li>
+                            <h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+                            24154 Yonge Rd.<br />
+                            Thornville ON<br />
+                            Canada
+                        </li>
+                        <li>
+                            <h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+                            000-000-0000
+                        </li>
+                        <li>
+                            <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+                            <a href="mailto:hello@prismedgetech.com">hello@prismedgetech.com</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-4 col-12-small">
-                <ul class="labeled-icons">
-                    <li>
-                        <h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-                        24154 Yonge Rd.<br />
-                        Thornville ON<br />
-                        Canada
-                    </li>
-                    <li>
-                        <h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-                        000-000-0000
-                    </li>
-                    <li>
-                        <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-                        <a href="mailto:hello@prismedgetech.com">hello@prismedgetech.com</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+              <script>
+                document.querySelector('form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                     alert('Message Sent!');
+                     this.reset();
+                  });
+              </script>
+        </section>
 </div>
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
