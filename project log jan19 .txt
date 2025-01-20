@@ -1,0 +1,145 @@
+Okay, I understand. Before we dive into the content, color, and typography refinements, it's a good idea to update the project log to reflect our current progress. This will give us a clear record of where we stand.
+
+Here's the updated project log for the Prism Edge Tech Website:
+
+Project Log for Prism Edge Tech Website
+
+Date: October 17, 2024
+
+Website URL: www.prismedgetech.com
+
+Current Status:
+
+Functionality:
+
+The site is deployed on GitHub Pages and accessible.
+
+Navigation links are working and use smooth scrolling.
+
+The active navigation links are styled correctly.
+
+The site uses the CSS scroll-snap-type property to stop scrolling at the beginning of each section.
+
+The logo now stretches to the edge of the header container.
+
+The header is fixed to the left side of the page.
+
+The text inside the main body of the site is now easier to read.
+
+The mobile site looks good, with appropriate styling and layout.
+
+A working contact form is implemented, that displays a message after submission.
+
+The form clears its fields after submission.
+
+The form uses HTML5 validation to make sure you provide input in the name and email fields.
+
+The form now has a clearer visual design and better accessibility.
+
+Layout and Spacing:
+
+The spacing above and below each section now looks good.
+
+The contact form labels are now aligned.
+
+The overall layout is functional, using a grid system and flexbox.
+
+The header is fixed to the left of the page, and the header logo now stretches to the edges of the header container.
+
+Content:
+
+The site contains the core content provided by the client, including information about services, the "About Us" section, and contact details.
+
+Images, logos, and icons are included and displayed correctly.
+
+The text in the Hero section has been modified to improve visibility.
+
+Styling:
+
+The site uses custom styles, building upon the base styles provided by HTML5 UP.
+
+Key elements like the header and navigation bar have custom styling.
+
+The call to action button in the header is now correctly displayed and is using the primary class styling.
+
+The header text is now more readable, due to the changes in line-height and font size.
+
+The spacing around all sections and the hero image are now much more consistent.
+
+Known Issues:
+
+The site is not yet optimised for search engines.
+
+The site lacks user testimonials or case studies.
+
+The "About Us" section is still quite generic.
+
+The "Our Services" section needs to be made more compelling.
+
+The design needs to be reviewed for persuasion and influence and we need to ensure a high level of usability.
+
+Analysis:
+
+Strengths: The core structure of the website is solid. The use of semantic HTML elements (such as <header>, <nav>, <section>, <article>, <footer>) is excellent and facilitates accessibility. The use of flexbox on the header and the grid-based system for layout provide a solid basis for future improvements. The contact form and all of the key site elements are working correctly.
+
+Areas for Improvement (Prioritized using Pareto Principle):
+
+High Priority (80% of Impact):
+
+User Experience: The site needs a more thorough UX review, with a focus on colour, typography, layout flow, and content. We need to review how effectively the site communicates its core value proposition and call to action and make a final assessment before completion.
+
+Medium Priority (15% of Impact):
+
+Active State: We can refine the active state styling so that it is highly usable and visually distinctive.
+
+Portfolio: A portfolio section needs to be added.
+
+Styling consistency: We should aim to make the text appear more consistent in headers and body sections of the page.
+
+Social Proof: We still need to work on the presentation of the client testimonials, and add more case studies.
+
+About Us: The "About Us" section still needs to be improved to add more detail about team expertise and the company culture.
+
+Low Priority (5% of Impact):
+
+SEO: Once the key parts of the site have been addressed, we can look at SEO and make adjustments to keyword use and content.
+
+Refine Layout: (As before) Review mobile and tablet layouts, and make adjustments to further improve their appearance.
+
+Micro-Interactions: (As before) Add small animations that improve user experience.
+
+Action Plan (Prioritized using Pareto Principle):
+
+High Priority: User Experience Review and Refinements (Estimated Time: 4-8 hours)
+
+Content Refinement: Based on your comments, it is now clear that we need to review the wording of all content and then make changes to remove jargon and ensure it is clearly presenting information in a way that promotes the company values.
+
+Colour Assessment: (As before) Analyse the current colour palette and make changes so it is more readable, trustworthy, and encourages conversion.
+
+Typography: (As before) Select the best combination of typefaces, weights, sizes and line heights. Ensure headings and text are easy to read and fit the overall message.
+
+Layout Flow: (As before) Review the page layout flow to ensure the most important information is clear.
+
+Medium Priority: Active State, Portfolio, Social Proof, and About Us (Estimated Time: 4-6 hours)
+
+Refine Active Link: (As before)
+
+Add a Portfolio Section: (As before)
+
+Incorporate Social Proof: (As before)
+
+Refine the About Us Section: (As before)
+
+Low Priority (For Later): SEO, Refinements and Micro-interactions (Time: Ongoing)
+
+SEO: (As before)
+
+Refine Layout: (As before)
+
+Micro-Interactions: (As before)
+
+Next Steps:
+
+With the project log updated, let's focus on the highest priority item which is to improve the user experience. We will now focus on the Content Refinements aspect of this high priority item.
+
+Are you ready to move on to the first part of this, and to focus on the wording of the content and to try to get rid of any jargon?

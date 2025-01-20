@@ -249,11 +249,12 @@ margin-top: 0;
 /* Vendor Logo Styling */
 #main .row article img {
     max-width: 70px !important;
-    height: auto !important;
+    height: 70px !important; /*Modified: Fixed height of the image*/
    filter: none !important;
    opacity: 1 !important;
     display: block;
     margin: 0 auto;
+    object-fit: contain;  /* Add object-fit to maintain aspect ratio*/
 }
 #main .row {
     display: flex;
@@ -700,4 +701,16 @@ input[type="submit"]:hover,
     font-size: 1.2em;
     margin-bottom: 0.5em;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        max-width: 100%;
+        padding: 1em;
+    }
+
+    .button {
+        width: 80%; /* Make buttons responsive */
+        font-size: 0.9rem;
+    }
 }

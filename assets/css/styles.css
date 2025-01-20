@@ -1,0 +1,174 @@
+/* Consolidated Stylesheet for Prism Edge Tech */
+
+/* Variables */
+:root {
+    --primary-color: #e43f5a;
+    --secondary-color: #49bf9d;
+    --text-color: #787878;
+    --background-color: #f7f7f7;
+    --font-family: "Source Sans Pro", Helvetica, sans-serif;
+    --base-padding: 1em;
+    --base-radius: 0.35em;
+    --transition-speed: 0.3s;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background: var(--background-color);
+    line-height: 1.75em;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color var(--transition-speed) ease-in-out;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+/* Buttons */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--base-padding) / 2) var(--base-padding);
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: var(--base-radius);
+    text-decoration: none;
+    transition: background-color var(--transition-speed) ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Forms */
+input[type="text"], input[type="password"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: var(--base-padding);
+    border: 2px solid #efefef;
+    border-radius: var(--base-radius);
+    background: #fff;
+    outline: none;
+    transition: border-color var(--transition-speed) ease-in-out;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--secondary-color);
+}
+
+/* Header */
+#header {
+    background-color: #1f1815;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: right;
+    padding: var(--base-padding);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#header .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--base-padding);
+}
+
+/* Navigation */
+.navBar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.navBar ul li a {
+    color: #fff;
+    text-transform: capitalize;
+    transition: color var(--transition-speed) ease-in-out;
+}
+
+.navBar ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Main Section */
+#main {
+    margin-left: 35%;
+    padding: var(--base-padding);
+    max-width: 65%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+#main > section {
+    scroll-snap-align: start;
+    border-top: 2px solid #efefef;
+    padding-top: var(--base-padding);
+}
+
+#main > section:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    padding: var(--base-padding);
+    background: #1f1815;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#footer .icons {
+    margin-top: var(--base-padding);
+}
+
+#footer .copyright {
+    font-size: 0.8em;
+}
