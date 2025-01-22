@@ -1,49 +1,59 @@
 $(document).ready(function () {
-    let navLinks = $('.navBar a');
-    let sections = $('section');
+  let navLinks = $('.navBar a');
+  let sections = $('section');
+  let currentSectionIndex = 0;
 
-    // Function to show the section based on hash
-    function showSection() {
-      const hash = window.location.hash;
+      // Function to check which section is in the viewport and set the active link
+      function checkActiveSection() {
+          let closestSection = null;
+          let closestDistance = Infinity;
+          sections.each(function (index) {
+              const rect = this.getBoundingClientRect();
+              const distance = Math.abs(rect.top);
 
-      // Hide all sections
-      sections.addClass('hide');
-       // Remove active class from all links
-        navLinks.removeClass('active');
-      if (hash) {
-        const targetSection = $(hash);
-           // Check if the target exists
-        if (targetSection.length) {
-        // Show the target section
-         targetSection.removeClass('hide');
-         // Add the active class
-            $(`.navBar a[href="${hash}"]`).addClass('active');
-         } else {
-                $('section').first().removeClass('hide');
-                 $('.navBar a').first().addClass('active');
-        }
-       } else {
-           // If no hash, show the first section
-             sections.first().removeClass('hide');
-            $('.navBar a').first().addClass('active');
-        }
-    }
+              if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                  if (distance < closestDistance) {
+                      closestDistance = distance;
+                      closestSection = this;
+                      currentSectionIndex = index;
+                  }
+              }
+          });
+          if (closestSection) {
+              setActiveNavLink(closestSection.id);
+          }
+      }
+
+  function setActiveNavLink(sectionId) {
+      // Remove active from all links
+      $('.navBar a').removeClass('active');
+
+      // Add active to the correct link
+      $(`.navBar a[href="#${sectionId}"]`).addClass('active');
+  }
+
+  // Handle navigation clicks
+  $('.navBar a').on('click', function (event) {
+      event.preventDefault();
+        // Remove active from all links
+         $('.navBar a').removeClass('active');
+          // Add active class to the current link
+          $(this).addClass('active');
+          let target = $(this).attr('href');
+          const targetElement = document.querySelector(target);
+       if(targetElement){
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+       }
+  });
+
+  // Check for active section on page load and scroll
+  checkActiveSection();
+  $(window).on('scroll', checkActiveSection);
 
 
-
-    // Navigation link click handler
-    $('.navBar a').on('click', function (event) {
-        event.preventDefault();
-        const target = $(this).attr('href');
-          // Update the hash without triggering hashchange event
-        window.history.pushState(null, null, target);
-
-        showSection();
-    });
-
-    // Hashchange event handler
-     $(window).on('hashchange', showSection);
-
-    // Initialize on page load
-    showSection();
+   // Add click handler to the hamburger icon
+      $('.nav-toggle').on('click', function(event){
+           event.preventDefault();
+          $('.navBar').toggleClass('active');
+     });
 });
