@@ -52,7 +52,7 @@ html, body {
 #header .inner .button {
     display: inline-block;
     padding: 1em 2em;
-    background-color: #e43f5a; /* Modified: set call to action color */
+    background-color: #e43f5a;
     color: #fff !important;
     text-decoration: none;
     border-radius: 5px;
@@ -63,7 +63,6 @@ html, body {
     margin-top: 0.5em;
         width: auto;
 }
-
 /* General Body Styles */
 body {
     color:#000;
@@ -187,6 +186,7 @@ body {
     border-top: solid 2px #efefef;
     margin: 0;
     padding: 1em 0 0 0;
+
 }
 
 #main > section:first-child {
@@ -198,7 +198,7 @@ margin-top: 0;
 
 /* Header container for sticky header - Changed to left side and removed height*/
 #header-container {
-    position: relative; /* modified: removed fixed position */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1001;
@@ -208,12 +208,12 @@ margin-top: 0;
     background-position: top left, top left;
     background-repeat: repeat, no-repeat;
     background-size: auto, 150%;
-     width: 100%; /* modified: set width to 100% */
+    width: 35%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    height: auto; /* Removed: set height to auto */
+    height: auto;
     overflow: hidden;
 }
 
@@ -290,8 +290,6 @@ margin-top: 0;
     margin: 0 auto;
     padding: 0 24px;
     position: relative;
-    flex-direction: row;
-    gap:1rem; /* Added gap */
 }
 
 .navBar ul li {
@@ -375,15 +373,24 @@ label {
     margin: 0 0 0.5em 0; /* Modified: reduce margin*/
     }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-select,
-textarea {
-    padding: 0.75em;
-     border: solid 2px #efefef;
-     border-radius: 0.35em;
-	}
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        background: #f7f7f7;
+        border-radius: 0.35em;
+        border: solid 1px #d6d6d6;
+        color: inherit;
+        display: block;
+        outline: 0;
+        padding: 0.75em; /* Modified: added padding*/
+        text-decoration: none;
+        width: 100%;
+    }
 
     input[type="text"]:invalid,
     input[type="password"]:invalid,
@@ -661,34 +668,6 @@ input[type="submit"]:hover,
         text-align: center; /* Center-align content */
     }
 
-    #header .inner {
-        gap: 0.5em; /* Reduce spacing for smaller screens */
-    }
-
-    #header .inner .button {
-        padding: 0.8em 1.5em; /* Adjust button padding */
-    }
-      h1 {
-        font-size: 1.5em; /* Scale down heading sizes */
-    }
-
-    p {
-        font-size: 0.9em; /* Reduce paragraph font size */
-    }
-     .navBar ul {
-        flex-direction: column; /* Stack navigation links vertically */
-        gap: 0.5em; /* Add spacing */
-     }
-    #main {
-       margin-left: 0;
-       width: 100%;
-            padding-top: 50px !important;
-       }
-    .section {
-        max-width: 100%;
-        padding: 1em;
-    }
-
     .button {
         width: 80%; /* Make buttons responsive */
         font-size: 0.9rem;
@@ -735,3 +714,14 @@ input[type="submit"]:hover,
     text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+    .section {
+        max-width: 100%;
+        padding: 1em;
+    }
+
+    .button {
+        width: 80%; /* Make buttons responsive */
+        font-size: 0.9rem;
+    }
+}
