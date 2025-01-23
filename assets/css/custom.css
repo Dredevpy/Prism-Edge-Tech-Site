@@ -186,6 +186,7 @@ body {
     border-top: solid 2px #efefef;
     margin: 0;
     padding: 1em 0 0 0;
+    border-bottom: 2px solid rgba(200, 200, 200, 0.3); /* Modified: added a border bottom*/
 
 }
 
@@ -665,11 +666,11 @@ input[type="submit"]:hover,
 @media screen and (max-width: 768px) {
     #header-container {
         position: relative;
-        width: 100%; /* Full width for mobile */
-        height: auto; /* Adjust height for scroll */
-        text-align: center; /* Center-align content */
+        width: 100%;
+        height: auto;
+        text-align: center;
     }
-      #header .inner {
+    #header .inner {
         gap: 0.5em;
     }
 
@@ -683,31 +684,28 @@ input[type="submit"]:hover,
     p {
         font-size: 0.9em;
     }
-     .navBar {
-        display: none; /* Hide by default */
+     .navBar ul {
+         flex-direction: column; /* Stack navigation links vertically */
+        align-items: flex-start;
+         gap: 0.5em;
+       padding: 0;
+      }
+   #main {
+       margin-left: 0;
+        width: 100%;
+        padding-top: 50px !important;
+       }
+    .section {
+        max-width: 100%;
+        padding: 1em;
     }
-    .navBar.active {
-        display: flex; /* Show when toggled */
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        background-color: rgba(0,0,0,0.7);
-        position: relative;
-        z-index: 1002; /* Ensure nav overlay is above other content */
+
+    .button {
+        width: 80%;
+        font-size: 0.9rem;
     }
-        #main {
-          margin-left: 0;
-          width: 100%;
-              padding-top: 50px !important;
-         }
-      .nav-toggle{
-         display: block;
-         font-size: 1.75rem;
-        color: #fff;
-        padding-right: 1em;
-        text-decoration: none;
-        }
-}
+
+} 
 /* Parent container for cards or sections with buttons */
 .card {
     display: flex;
