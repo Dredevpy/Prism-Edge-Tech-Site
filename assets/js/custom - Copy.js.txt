@@ -1,0 +1,51 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.navBar a');
+    const sections = document.querySelectorAll('section');
+    const header = document.querySelector('#header'); 
+
+    function checkActiveSection() {
+        // ... (This function remains the same) ...
+    }
+
+    function setActiveNavLink(sectionId) {
+        // ... (This function remains the same) ...
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const target = this.getAttribute('href');
+            const targetSection = document.querySelector(target);
+
+            if (targetSection) {
+                targetSection.classList.remove('hide');
+
+                // Accurate scroll position calculation:
+                const headerHeight = header.offsetHeight;
+                const targetPosition = targetSection.offsetTop - headerHeight;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+
+                setActiveNavLink(target.substring(1));
+                console.log(`Scrolled to section: ${target}`);
+            } else {
+                console.error(`Error: Section with ID "${target.substring(1)}" not found.`);
+            }
+        });
+    });
+
+    checkActiveSection();
+    window.addEventListener('scroll', checkActiveSection);
+
+    //Hamburger menu functionality (remains unchanged)
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const navMenu = document.querySelector('.main-nav');
+
+    hamburgerIcon.addEventListener('click', function() {
+        navMenu.classList.toggle('hide');
+    });
+
+});

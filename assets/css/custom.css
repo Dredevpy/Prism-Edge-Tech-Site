@@ -30,7 +30,7 @@ html, body {
     justify-content: center;
     text-align: center;
     height: auto; /* Ensure no fixed height */
-    gap: 0.5em; /* Adds spacing between elements */
+    gap: 1em; /* Adds spacing between elements */
     padding: 1em;
 }
 #header .inner h1 {
@@ -52,7 +52,7 @@ html, body {
 #header .inner .button {
     display: inline-block;
     padding: 1em 2em;
-    background-color: #e43f5a;
+    background-color: #e43f5a; /* Modified: set call to action color */
     color: #fff !important;
     text-decoration: none;
     border-radius: 5px;
@@ -63,6 +63,7 @@ html, body {
     margin-top: 0.5em;
         width: auto;
 }
+
 /* General Body Styles */
 body {
     color:#000;
@@ -186,7 +187,6 @@ body {
     border-top: solid 2px #efefef;
     margin: 0;
     padding: 1em 0 0 0;
-
 }
 
 #main > section:first-child {
@@ -213,8 +213,8 @@ margin-top: 0;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    height: auto;
-    overflow: hidden;
+    height: 100vh; /* Constrain to viewport height */
+    overflow: hidden; /* Prevent content overflow */
 }
 
 /* Header styling for sticky header - Changed to left side and removed width*/
@@ -249,12 +249,11 @@ margin-top: 0;
 /* Vendor Logo Styling */
 #main .row article img {
     max-width: 70px !important;
-    height: 70px !important; /*Modified: Fixed height of the image*/
+    height: auto !important;
    filter: none !important;
    opacity: 1 !important;
     display: block;
     margin: 0 auto;
-    object-fit: contain;  /* Add object-fit to maintain aspect ratio*/
 }
 #main .row {
     display: flex;
@@ -373,24 +372,15 @@ label {
     margin: 0 0 0.5em 0; /* Modified: reduce margin*/
     }
 
-    input[type="text"],
-    input[type="password"],
-    input[type="email"],
-    textarea {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        -ms-appearance: none;
-        appearance: none;
-        background: #f7f7f7;
-        border-radius: 0.35em;
-        border: solid 1px #d6d6d6;
-        color: inherit;
-        display: block;
-        outline: 0;
-        padding: 0.75em; /* Modified: added padding*/
-        text-decoration: none;
-        width: 100%;
-    }
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+    padding: 0.75em;
+     border: solid 2px #efefef;
+     border-radius: 0.35em;
+	}
 
     input[type="text"]:invalid,
     input[type="password"]:invalid,
@@ -661,11 +651,9 @@ input[type="submit"]:hover,
 
 }
 @media screen and (max-width: 768px) {
-    #header-container {
-        position: relative;
-        width: 100%; /* Full width for mobile */
-        height: auto; /* Adjust height for scroll */
-        text-align: center; /* Center-align content */
+    .section {
+        max-width: 100%;
+        padding: 1em;
     }
 
     .button {
@@ -712,16 +700,4 @@ input[type="submit"]:hover,
     font-size: 1.2em;
     margin-bottom: 0.5em;
     text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-    .section {
-        max-width: 100%;
-        padding: 1em;
-    }
-
-    .button {
-        width: 80%; /* Make buttons responsive */
-        font-size: 0.9rem;
-    }
 }

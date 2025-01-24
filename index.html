@@ -15,7 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 	</head>
 	<body class="is-preload home-page">
-        <header id="header-container">
+        <div id="header-container">
             <header id="header">
                 <div class="logo-container">
                     <a href="/">
@@ -23,46 +23,51 @@
                     </a>
                 </div>
                 
-                <div class="navBar-container">
-                   <div style="width: 100%;"> <nav class="navBar">
-                        <ul>
-                            <li><a href="#home" class="active">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
-							<li><a href="#">Portfolio</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
+                <div class="nav-toggle-container">
+                    <button class="nav-toggle">☰ Menu</button>
                 </div>
-            </div>
-            <div class="inner">
-                <img src="images/Prism-Hero.jpg" alt="Before and after showcasing improved workflow with Azure cloud solutions" class="hero-image-tag">
-                <h1>Your Trusted IT Partner for Business Growth.</h1> <div class="second_line">We Simplify IT So You Can Focus On Growing Your Business.</div>
-                 <p>From cloud solutions to intelligent automation, we turn today's technology into tomorrow's profit.</p>
-                <a href="#contact" class="button primary">Schedule a Free Consultation</a>
-            </div>
+                <div class="navBar-container">
+                    <div style="width: 100%;">
+                        <nav class="navBar">
+                            <ul>
+                                <li><a href="#home" class="active">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+                <div class="inner">
+                    <img src="images/Prism-Hero.jpg" alt="Before and after showcasing improved workflow with Azure cloud solutions" class="hero-image-tag">
+                    <h1>Your Trusted IT Partner for Business Growth.</h1> <div class="second_line">We Simplify IT So You Can Focus On Growing Your Business.</div>
+                     <p>From cloud solutions to intelligent automation, we turn today's technology into tomorrow's profit.</p>
+                    <a href="#contact" class="button primary">Schedule a Free Consultation</a>
+                </div>
             </header>
-       
-            <footer id="footer">
-				<div class="inner">
-					<ul class="icons">
+        </div>
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
                     <li><a href="#" class="icon brands fa-bluesky"><span class="label">Bluesky</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>© Prism Edge Tech</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-        </header>
+                    <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                    <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                    <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>© Prism Edge Tech</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+
 		<!-- Main -->
 			    <!-- Main -->
    <div id="main">
-	<!-- Home Section -->
-      <!-- Home Section -->
-      <section id="home" data-section="1">
+
+    <!-- Home Section -->
+    <section id="home" data-section="1">
         <header class="major">
                 <h2>Comprehensive IT Solutions Designed to Accelerate Your Growth</h2>
             </header>
@@ -192,8 +197,7 @@
 		</div>
 	</section>
 	<!-- About Section -->
-    <section id="about" data-section="2">
-        <section id="about" class="hide" data-section="2"></section>
+    <section id="about" class="hide" data-section="2">
         <header class="major">
             <h2>How We Can Help You</h2>
         </header>
@@ -304,7 +308,6 @@
         </header>
         <p>With over 20 years of IT expertise, we empower businesses and non-profits with tailored, scalable solutions to drive growth, enhance security, and optimize costs. We provide simplified solutions for a rapidly changing technical landscape</p>
     </section>
-
     <!-- Services Section -->
     <section id="services" class="hide" data-section="3">
              <header class="major">
@@ -371,9 +374,15 @@
             <li><a href="#">[Placeholder Solution Brief Title]</a></li>
         </ul>
     </section>
-
+     <!-- Portfolio Section -->
+    <section id="portfolio" class="hide" data-section="4">
+        <header class="major">
+            <h2>Portfolio</h2>
+        </header>
+        <p>This section is under construction. Check back later!</p>
+    </section>
      <!-- Contact Section -->
-     <section id="contact" class="hide" data-section="4">
+     <section id="contact" class="hide" data-section="5">
         <header class="major">
             <h2>Get In Touch</h2>
         </header>
