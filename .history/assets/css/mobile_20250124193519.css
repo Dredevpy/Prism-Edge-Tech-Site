@@ -1,0 +1,69 @@
+@media screen and (max-width: 768px) {
+    #header-container {
+        width: 100%; /* Full width for mobile */
+        position: fixed; /* Sticky header */
+        top: 0;
+        left: 0;
+        z-index: 1001;
+        background-color: #1f1815;
+    }
+
+    /* Stack logo and nav vertically */
+    #header .logo-container, .navBar-container {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    /* Hide the navBar and show hamburger */
+    .navBar {
+        display: none;
+    }
+
+    .nav-toggle-container {
+        display: block;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    /* Show navBar when toggled */
+    .navBar.show {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1f1815;
+        padding: 1em;
+        z-index: 1002; /* Ensure it's above other content */
+    }
+
+    /* Make nav links full width */
+    .navBar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navBar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navBar ul li a {
+        padding: 1em 0;
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Active link styling */
+    .navBar ul li a.active {
+        color: #e43f5a; /* Matches your main CSS active link color */
+        font-weight: bold;
+    }
+
+
+
+
+}
