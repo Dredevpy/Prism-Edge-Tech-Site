@@ -21,49 +21,39 @@
             <header id="header">
                 <div class="logo-container">
                     <a href="/">
-                       <img src="images/Prism-Edge-banner.png" alt="Prism Edge Tech Logo">
+                        <img src="images/Prism-Edge-banner.png" alt="Prism Edge Tech Logo">
                     </a>
                 </div>
-                
+    
                 <div class="nav-toggle-container">
                     <button class="nav-toggle">☰ Menu</button>
                 </div>
-                <div class="navBar-container desktop-nav">
-                    <div style="width: 100%;">
-                        <nav class="navBar">
-                            <ul>
-                                <li><a href="#home" class="active">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#services">Services</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+    
+                <nav class="navBar desktop-nav">
+                    <ul>
+                        <section id="home" data-section="1">Home</section>
+                        <section id="about" data-section="2">About</section>
+                        <section id="services" data-section="3">Services</section>
+                        <section id="portfolio" data-section="4">Portfolio</section>
+                        <section id="contact" data-section="5">Contact</section>
+                    </ul>
+                </nav>
+                <div id="mobile-menu" class="hide">
+                    <nav class="navBar">
+                        <ul>
+                            <section id="home" data-section="1">Home</section>
+                            <section id="about" data-section="2">About</section>
+                            <section id="services" data-section="3">Services</section>
+                            <section id="portfolio" data-section="4">Portfolio</section>
+                            <section id="contact" data-section="5">Contact</section>
+                        </ul>
+                    </nav>
                 </div>
-                				<!-- Mobile Navigation (Bootstrap) -->
-				<div id="mobile-menu">
-					<nav class="navbar navbar-expand-lg navbar-light bg-light">
-						<div class="container">
-							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
-							</button>
-							<div class="collapse navbar-collapse" id="navbarNav">
-								<ul class="navbar-nav">
-									<li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
-									<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-									<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-									<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-									<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-				</div>
                 <div class="inner">
                     <img src="images/Prism-Hero.jpg" alt="Before and after showcasing improved workflow with Azure cloud solutions" class="hero-image-tag">
-                    <h1>Your Trusted IT Partner for Business Growth.</h1> <div class="second_line">We Simplify IT So You Can Focus On Growing Your Business.</div>
-                     <p>From cloud solutions to intelligent automation, we turn today's technology into tomorrow's profit.</p>
+                    <h1>Your Trusted IT Partner for Business Growth.</h1>
+                    <div class="second_line">We Simplify IT So You Can Focus On Growing Your Business.</div>
+                    <p>From cloud solutions to intelligent automation, we turn today's technology into tomorrow's profit.</p>
                     <a href="#contact" class="button primary">Schedule a Free Consultation</a>
                 </div>
             </header>
@@ -462,13 +452,7 @@
     </section>
 </div>
 <!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.poptrox.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/custom.js"></script>
-<script src="assets/js/mobile.js"></script>
-	</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="assets/js/mobile.js"></script> <!-- Add this line -->
+</body>
 </html>

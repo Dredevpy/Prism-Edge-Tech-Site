@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
     #header-container {
-        width: 100%; /* Full width for mobile */
-        position: fixed; /* Sticky header */
+        width: 100%;
+        position: fixed;
         top: 0;
         left: 0;
         z-index: 1001;
@@ -15,36 +15,71 @@
         text-align: center;
     }
 
-    /* Hide the navBar and show hamburger */
-    .navBar {
+    /* Hide the desktop navBar */
+    .desktop-nav {
         display: none;
     }
 
-    .nav-toggle-container {
-        display: block;
-        text-align: center;
-        margin-top: 1em;
-    }
-
-    /* Show navBar when toggled */
-    .navBar.show {
-        display: block;
-        position: absolute;
-        top: 100%;
+    /* Show the mobile menu container */
+    #mobile-menu {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed position to stay in place */
+        top: 64px; /* Adjust based on your header height */
         left: 0;
-        right: 0;
-        background-color: #1f1815;
-        padding: 1em;
+        width: 100%; /* Full width */
+        height: calc(100vh - 64px); /* Full height minus header height */
+        background-color: #1f1815; /* Match header background */
+        z-index: 1002; /* Ensure it's above other elements */
+        overflow-y: auto; /* Enable scrolling if content overflows */
     }
 
-    /* Make nav links full width */
-    .navBar ul li {
-        width: 100%;
-        text-align: center;
+
+/* Show the mobile menu when the .show class is added */
+#mobile-menu.show {
+    display: block; /* Show the menu */
+}
+    
+/* Styles for the mobile menu navigation */
+#mobile-menu .navBar {
+    padding: 1em; /* Add padding for spacing */
+}
+
+#mobile-menu .navBar ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+#mobile-menu .navBar ul li {
+    margin: 0; /* Remove default margin */
+    padding: 0.5em 0; /* Add padding for spacing */
+    text-align: center; /* Center align menu items */
+}
+#mobile-menu .navBar ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Adjust font size */
+    display: block; /* Make links block-level for full width */
+}
+
+#mobile-menu .navBar ul li a:hover {
+    color: #e43f5a; /* Hover color */
+}
+#mobile-menu .navbar-toggler {
+        background-color: transparent; /* Example: white hamburger icon */
     }
 
-    .navBar ul li a {
-        padding: 1em;
-        display: block;
+#mobile-menu .navBar ul li a:hover {
+    color: #e43f5a; /* Hover color */
+}
+
+ 
+
+}
+
+/* Styles for larger screens (optional) -  to make sure the desktop nav stays visible when it is supposed to */
+@media screen and (min-width: 769px){
+    #mobile-menu {
+        display: none; /* Hide mobile menu on larger screens */
     }
 }

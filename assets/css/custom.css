@@ -18,6 +18,44 @@ html, body {
     max-height: 300px; /* Constrain maximum height */
     object-fit: cover; /* Ensure the image scales properly */
 }
+#main-nav {
+    display: none; /* Initially hidden */
+    position: absolute; /* Or fixed, depending on your layout */
+    top: 64px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    z-index: 1002;  /* Make sure it's above the header */
+    background-color: white; /*Or whatever color you want*/
+}
+
+#main-nav.show {
+    display: block; /* Show when .show class is added */
+}
+
+/* Style the Bootstrap navbar-toggler */
+.navbar-toggler {
+    background-color: #f0f0f0; /* Replace with background-color from your original nav-toggle-container */
+    border: none;
+    color: #f0f0f0; /*Replace with color from your original nav-toggle */
+    font-size: 24px; /*Replace with font-size from your original nav-toggle*/
+    padding: 10px; /*Replace with padding from your original nav-toggle*/
+    cursor: pointer;
+    border-radius: 5px; /*Replace with border-radius from your original nav-toggle*/
+    position: fixed; /*Replace with position from your original nav-toggle-container*/
+    top: 20px; /*Replace with top from your original nav-toggle-container*/
+    right: 20px; /*Replace with right from your original nav-toggle-container*/
+    z-index: 1002; /* Ensure it's above other elements */
+
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    display: none; /* Hide Bootstrap's default icon */
+}
 
 
 .inner {
