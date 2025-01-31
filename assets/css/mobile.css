@@ -26,9 +26,12 @@
         position: fixed; /* Fixed position to stay in place */
         top: 64px; /* Adjust based on your header height */
         left: 0;
+        top: 0;
         width: 100%; /* Full width */
         height: calc(100vh - 64px); /* Full height minus header height */
-        background-color: #1f1815; /* Match header background */
+        background-color: rgba(31, 24, 21, 0.7); /* Semi-transparent background */
+        backdrop-filter: blur(10px); /* Blur effect */
+        -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
         z-index: 1002; /* Ensure it's above other elements */
         overflow-y: auto; /* Enable scrolling if content overflows */
     }
@@ -41,7 +44,7 @@
     
 /* Styles for the mobile menu navigation */
 #mobile-menu .navBar {
-    padding: 1em; /* Add padding for spacing */
+    padding: 2em; /* Add padding for spacing */
 }
 
 #mobile-menu .navBar ul {
@@ -52,14 +55,15 @@
 
 #mobile-menu .navBar ul li {
     margin: 0; /* Remove default margin */
-    padding: 0.5em 0; /* Add padding for spacing */
+    padding: 1em 8; /* Add padding for spacing */
     text-align: center; /* Center align menu items */
 }
 #mobile-menu .navBar ul li a {
     color: #fff; /* White text color */
     text-decoration: none; /* Remove underline */
-    font-size: 1.2em; /* Adjust font size */
+    font-size: 1.0em; /* Adjust font size */
     display: block; /* Make links block-level for full width */
+    margin-left: 12px; /* Spacing between items */
 }
 
 #mobile-menu .navBar ul li a:hover {
