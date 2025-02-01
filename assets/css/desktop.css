@@ -5,9 +5,12 @@
 */
 
 html, body {
+    
     margin: 0;
     padding: 0;
+    overflow: hidden; /* Prevent scrolling between sections */
 }
+
 
 /* Hero Image Styling */
 .hero-image-tag {
@@ -38,12 +41,12 @@ html, body {
     border: none;
     color: #f0f0f0; /*Replace with color from your original nav-toggle */
     font-size: 24px; /*Replace with font-size from your original nav-toggle*/
-    padding: 5px; /*Replace with padding from your original nav-toggle*/
+    padding: 10px; /*Replace with padding from your original nav-toggle*/
     cursor: pointer;
     border-radius: 5px; /*Replace with border-radius from your original nav-toggle*/
     position: fixed; /*Replace with position from your original nav-toggle-container*/
-    top: 10px; /*Replace with top from your original nav-toggle-container*/
-    right: 10px; /*Replace with right from your original nav-toggle-container*/
+    top: 20px; /*Replace with top from your original nav-toggle-container*/
+    right: 20px; /*Replace with right from your original nav-toggle-container*/
     z-index: 1002; /* Ensure it's above other elements */
 
 }
@@ -222,9 +225,7 @@ body {
 	width: calc(100% - 35%);
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    scroll-behavior: smooth;
-    z-index: 1;
-    
+     scroll-behavior: smooth;
 }
 
 
@@ -262,7 +263,6 @@ margin-top: 0;
     height: 100vh; /* Constrain to viewport height */
     overflow: hidden; /* Prevent content overflow */
 }
-
 
 /* Header styling for sticky header - Changed to left side and removed width*/
 #header {
@@ -726,7 +726,19 @@ input[type="submit"]:hover,
     box-sizing: border-box;
 }
 
+section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Allow scrolling within the selected section */
+    display: none; /* Hide all sections by default */
+}
 
+section:not(.hide) {
+    display: block; /* Show only the active section */
+}
 /* Section alignment for each feature */
 .section {
     display: flex;
