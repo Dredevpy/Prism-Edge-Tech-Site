@@ -71,17 +71,24 @@
     }
 /* Styling for the navigation links (optional) */
     .navBar ul {
+    
+        justify-content: space-between; /* Evenly distribute links */
+        width: 100%; /* Make nav take full width */
         list-style-type: none; /* Removes bullet points from the list */
         margin: 0;   /* Removes default margins */
         padding: 0;  /* Removes default paddings */
         display: flex; /* Arranges the links in a row */
-        justify-content: center; /* Centers the links horizontally */
         box-sizing: border-box;  /* Ensures padding and border are included in the total width */
     }
     .navBar li {
         margin: 0 15px; /* Adds spacing between the links */
         box-sizing: border-box;  /* Ensures padding and border are included in the total width */
     }
+    .navBar ul li {
+        margin: 0 8px; /* Reduce space between links */
+        padding: 5px 0; /* Adjust padding */
+    }
+
     .navBar a {
         text-decoration: none; /* Removes underlines from links */
         color: rgb(249, 241, 241); /* Sets the link color */
@@ -90,6 +97,8 @@
     .navBar a:hover {
         color: blue; /* Changes the link color on hover (optional) */
     }
+
+
     .hero-image-tag {
         width: 100%;
         height: auto;
