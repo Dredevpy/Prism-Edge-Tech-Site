@@ -1,0 +1,73 @@
+$(document).ready(function () {
+    let navLinks = $('.navBar a');
+    let sections = $('section');
+
+    // Function to show the section based on hash
+    function showSection() {
+        const hash = window.location.hash;
+
+        // Hide all sections
+        sections.addClass('hide');
+        // Remove active class from all links
+        navLinks.removeClass('active');
+
+        if (hash) {
+            const targetSection = $(hash);
+            // Check if the target exists
+            if (targetSection.length) {
+                // Show the target section
+                targetSection.removeClass('hide');
+                // Add the active class
+                $(`.navBar a[href="${hash}"]`).addClass('active');
+            } else {
+                // If the target section doesn't exist, show the first section
+                sections.first().removeClass('hide');
+                navLinks.first().addClass('active');
+            }
+        } else {
+            // If no hash, show the first section
+            sections.first().removeClass('hide');
+            navLinks.first().addClass('active');
+        }
+    }
+
+    // Navigation link click handler
+    $('.navBar a').on('click', function (event) {
+        event.preventDefault();
+        const target = $(this).attr('href');
+
+        // Update the hash without triggering hashchange event
+        window.history.pushState(null, null, target);
+
+        // Show the target section
+        showSection();
+
+        // Scroll to the top of the target section
+        const targetSection = $(target);
+        if (targetSection.length) {
+            $('html, body').animate({
+                scrollTop: targetSection.offset().top
+            }, 800); // Smooth scroll animation
+        }
+    });
+
+    // Hashchange event handler
+    $(window).on('hashchange', showSection);
+
+    // Initialize on page load
+    showSection();
+
+    // Mobile Menu Toggle
+    const menuToggle = $('.nav-toggle');
+    const mobileMenu = $('#mobile-menu');
+
+    // Toggle mobile menu
+    menuToggle.on('click', function () {
+        mobileMenu.toggleClass('hide');
+    });
+
+    // Close mobile menu when a link is clicked
+    $('#mobile-menu .navBar a').on('click', function () {
+        mobileMenu.addClass('hide');
+    });
+});

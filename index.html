@@ -5,57 +5,50 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    <head>
+	<head>
 		<title>Prism Edge Tech - IT Consulting and AI Solutions</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="Prism Edge Tech provides IT consulting and AI solutions to empower businesses. We specialize in cloud migration, cybersecurity, automation, and custom software development." />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">  <!-- Google Fonts should be before your custom CSS -->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
-		<link rel="stylesheet" href="assets/css/mobile.css" />  
-    </head>
+        <link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css">
+        <link rel="stylesheet" href="assets/css/mobile.css">
+        <link rel="stylesheet" href="assets/css/nav.css">
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+	</head>
 	<body class="is-preload home-page">
         <div id="header-container">
             <header id="header">
                 <div class="logo-container">
                     <a href="/">
-                        <img src="images/Prism-Edge-banner.png" alt="Prism Edge Tech Logo">
+                       <img src="images/Prism-Edge-banner.png" alt="Prism Edge Tech Logo">
                     </a>
                 </div>
-                <div class="nav-toggle-container">
-                    <button id="myNavToggle" class="nav-toggle">☰ Menu</button>
+                
+                <!--div class="nav-toggle-container"-->
+                    <!---button class="nav-toggle">☰ Menu</button----->
+                <!---/div---->
+                <div class="navBar-container">
+                    <div style="width: 100%;">
+                        <nav class="navBar">
+                            <ul>
+                                <li><a href="#home" class="active">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
                 
-                <!-- Desktop Navigation -->
-                <nav class="navBar desktop-nav">
-                    <ul>
-                        <li><a href="#home" data-section="1">Home</a></li>
-                        <li><a href="#about" data-section="2">About</a></li>
-                        <li><a href="#services" data-section="3">Services</a></li>
-                        <li><a href="#portfolio" data-section="4">Portfolio</a></li>
-                        <li><a href="#contact" data-section="5">Contact</a></li>
-                    </ul>
-                </nav>
-                
-                <!-- Mobile Navigation -->
-                <div id="mobile-menu" class="hide">
-                    <nav class="navBar">
-                        <ul>
-                            <li><a href="#home" data-section="1">Home</a></li>
-                            <li><a href="#about" data-section="2">About</a></li>
-                            <li><a href="#services" data-section="3">Services</a></li>
-                            <li><a href="#portfolio" data-section="4">Portfolio</a></li>
-                            <li><a href="#contact" data-section="5">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
                 <div class="inner">
                     <img src="images/Prism-Hero.jpg" alt="Before and after showcasing improved workflow with Azure cloud solutions" class="hero-image-tag">
-                    <h1>Your Trusted IT Partner for Business Growth.</h1>
-                    <div class="second_line">We Simplify IT So You Can Focus On Growing Your Business.</div>
-                    <p>From cloud solutions to intelligent automation, we turn today's technology into tomorrow's profit.</p>
+                    <h1>Your Trusted IT Partner for Business Growth.</h1> <div class="second_line">We Simplify IT So You Can Focus On Growing Your Business.</div>
+                     <p>From cloud solutions to intelligent automation, we turn today's technology into tomorrow's profit.</p>
                     <a href="#contact" class="button primary">Schedule a Free Consultation</a>
                 </div>
             </header>
@@ -455,8 +448,12 @@
 </div>
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="assets/js/desktop_navigation.js"></script>
-<script src="assets/js/mobile_navigation.js"></script> <!-- Add this line -->
-</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.poptrox.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/custom.js"></script>
+	</body>
 </html>

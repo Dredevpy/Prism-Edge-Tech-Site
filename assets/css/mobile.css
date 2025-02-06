@@ -1,171 +1,253 @@
-/* Media query for screens with a maximum width of 768px (mobile devices) */
-@media screen and (max-width: 768px) {
-    /* Style the header container for mobile view */
+
+@media screen and (max-width: 980px) {
+    /* Basic */
+    h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
+        display: none;
+    }
+    /* List */
+    ul.icons li .icon {
+        font-size: 1.25em;
+    }
+    /* Header */
+        /* Added header-container styles */
     #header-container {
-        width: 100%; /* Full width */
-        position: fixed; /* Fix the header at the top */
-        top: 0; /* Align to the top of the screen */
-        left: 0; /* Align to the left of the screen */
-        z-index: 1001; /* Ensure it's above other elements */
-        background-color: #1f1815; /* Dark background color */
-    }
-
-    #header .inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        height: auto;
-        gap: 1em;
-        padding: 1em;
-        margin-top: 0px; /* This margin-top is only applied on mobile */
-    }
-
-    /* Stack logo and navigation vertically */
-    #header .logo-container {
-        width: 100%; /* Full width */
-        display: block; /* Display as block elements */
-        text-align: center; /* Center-align content */
-        padding: 1px;
-    }
-
-    .navBar-container {
-        width: 100%; /* Full width */
-        display: block; /* Display as block elements */
-        text-align: center; /* Center-align content */
-        margin-top: 20px; /* Add a margin to move the navigation bar beneath the logo */
-        margin-bottom: 20px;
-    }
-
-    /* Ensure the logo remains clearly visible */
-    #header .logo-container img {
-        max-width: 90%; /* Limit logo width to 90% of its container */
-        height: auto; /* Maintain aspect ratio */
-        display: block; /* Display as a block element */
-        margin: 5px auto; /* Center the logo horizontally with 5px margin */
-        background-color: rgba(255, 255, 255, 0.2); /* Light semi-transparent background */
-        padding: 5px; /* Add padding around the logo */
-        border-radius: 4px; /* Slightly rounded corners */
-    }
-
-    /* Hide the desktop navigation bar */
-    .desktop-nav {
-        display: none; /* Completely hide the desktop navigation */
-    }
-
-    #mobile-menu.hide {
-        display: none;
-    }
-
-    #myNavToggle {
-        width: 60px; /* Adjust width as needed */
-        height: 40px; /* Adjust height as needed */
-        padding: 0; /* Remove any default padding */
-        font-size: 1em; /* Adjust font size as needed */
-        background-color: whitesmoke; /* Adjust background color */
-        border: none; /* No border by default */
-        cursor: pointer; /* Important for visual feedback */
-        margin-right: 10px; /* Adjust margin to put some space between the button and the edge of the screen */
-        z-index: 1004;
-        max-width: 100px; /* Set a maximum width to prevent it from getting too large */
-    }
-
-    /* Style the mobile menu container */
-    #mobile-menu {
-        position: fixed;
-        top: 76px;
-        left: 0;
         width: 100%;
-        height: 100vh;
-        background-color: rgba(125, 116, 112, 0.194);
-        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1001;
+        background-color: #1f1815;
+    }
+    #header {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6em 4em;
+        width: 100%; 
+    }
+    .logo-container {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 70%;
+        box-sizing: border-box;
     }
-
-    /* Fix menu width overflow */
-    #mobile-menu .navBar {
-        max-width: 90%; /* Prevent the menu from being too wide */
-        margin: 5px; /* Center the menu horizontally */
-        padding-bottom: 2px; /* Add padding inside the menu */
-        padding-top: 2px;
+    .logo-container img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        box-sizing: border-box;
     }
-
-    /* Show the mobile menu when toggled */
-    #mobile-menu.show {
-        display: block; /* Display the mobile menu */
+    .nav-toggle-container {
+        display: flex;
+        align-items: center;
     }
-
-    #mobile-menu.show ~ section {
-        display: none; /* Ensure only one section is visible */
+    .nav-toggle {
+        cursor: pointer;
     }
-
-    /* Style the mobile menu navigation list */
-    #mobile-menu .navBar ul {
-        list-style: none; /* Remove bullet points */
-        margin: 0; /* Remove default margin */
-        padding: 2px 0 !important;
+    #header h1 {
+        font-size: 1.75em;
     }
-
-    /* Style individual list items in the mobile menu */
-    #mobile-menu .navBar ul li {
-        margin: 0; /* Remove default margin */
-        padding: 0.4em; /* Add padding around each item */
-        text-align: center; /* Center-align text */
+    #header h1 br {
+        display: inline;
     }
-
-    /* Style links in the mobile menu */
-    #mobile-menu .navBar ul li a {
-        color: #fff; /* White text color */
-        text-decoration: none; /* Remove underline */
-        font-size: 0.8em; /* Smaller font size */
-        display: block; /* Display as block elements */
-        padding: 10px 0; /* Add padding above and below links */
+    .inner {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
     }
-
-    /* Change link color on hover */
-    #mobile-menu .navBar ul li a:hover {
-        color: #e43f5a; /* Red color on hover */
+        /* Basic styling for the navbar container */
+    .navBar-container {
+        width: 100%; /* Ensures the container spans the full width */
+        margin: 0;  /* Removes any default margins */
+        padding: 0; /* Removes any default paddings */
+        box-sizing: border-box; /* Ensures padding and border are included in the total width */
     }
-
-    /* Prevent scrolling when the mobile menu is open */
-    body.menu-open {
-        overflow: hidden; /* Disable scrolling */
+/* Styling for the navigation bar itself */
+    .navBar {
+        width: 100%;  /* Makes the navigation bar span the full width of its container */
+        box-sizing: border-box;  /* Ensures padding and border are included in the total width */
     }
-
-    /* Show the mobile menu when the body has the 'menu-open' class */
-    body.menu-open #mobile-menu {
-        display: block; /* Display the mobile menu */
+/* Styling for the navigation links (optional) */
+    .navBar ul {
+        list-style-type: none; /* Removes bullet points from the list */
+        margin: 0;   /* Removes default margins */
+        padding: 0;  /* Removes default paddings */
+        display: flex; /* Arranges the links in a row */
+        justify-content: center; /* Centers the links horizontally */
+        box-sizing: border-box;  /* Ensures padding and border are included in the total width */
+    }
+    .navBar li {
+        margin: 0 15px; /* Adds spacing between the links */
+        box-sizing: border-box;  /* Ensures padding and border are included in the total width */
+    }
+    .navBar a {
+        text-decoration: none; /* Removes underlines from links */
+        color: rgb(249, 241, 241); /* Sets the link color */
+        box-sizing: border-box;  /* Ensures padding and border are included in the total width */
+    }
+    .navBar a:hover {
+        color: blue; /* Changes the link color on hover (optional) */
+    }
+    .hero-image-tag {
+        width: 100%;
+        height: auto;
+    }
+    /* Footer */
+    #footer {
+        background-attachment: scroll;
+        background-color: #1f1815;
+        background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+        background-position: top left, bottom center;
+        background-repeat: repeat, no-repeat;
+        background-size: auto, cover;
+        bottom: auto;
+        left: auto;
+        padding: 4em 4em 6em 4em;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+    #footer .icons {
+        margin: 0 0 1em 0;
+    }
+    #footer .copyright {
+        margin: 0 0 1em 0;
+    }
+    #footer .copyright li {
+        border-left-width: 1px;
+        display: inline-block;
+        line-height: 1em;
+        margin-left: 0.75em;
+        padding-left: 0.75em;
+    }
+    /* Main */
+    #main {
+        margin: 0;
+        padding: 6em 4em;
+        width: 100%;
     }
 }
-
-/* Media query for screens with a minimum width of 769px (desktop devices) */
-@media screen and (min-width: 769px) {
-    /* Hide the mobile menu on desktop */
-    #mobile-menu {
-        display: none; /* Completely hide the mobile menu */
+/* Small */
+@media screen and (max-width: 736px) {
+            /* Added header-container styles */
+    #header-container {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1001;
+        background-color: #1f1815;
     }
-
-    /* Hide the mobile toggle button on desktop */
-    #header .nav-toggle-container .nav-toggle {
+    /* Basic */
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    /* Section/Article */
+    section.special, article.special {
+        text-align: center;
+    }
+    header.major h2 {
+        font-size: 1.35em;
+    }
+    /* List */
+    ul.labeled-icons li {
+        padding-left: 2em;
+    }
+    ul.labeled-icons li h3 {
+        line-height: 1.75em;
+    }
+    /* Header */
+    #header {
+        padding: 5px 10px;
+    }
+    #header h1 {
+        font-size: 1.35em;
+    }
+    .inner {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    .hero-image-tag {
+        width: 100%;
+        height: auto;
+    }
+    /* Footer */
+    #footer {
+        padding: 2.25em 1.5em;
+    }
+    /* Main */
+    #main {
+        padding: 2.25em 1.5em 0.25em 1.5em;
+    }
+    #main > section {
+        margin: 2.25em 0 0 0;
+        padding: 2.25em 0 0 0;
+    }
+    /* Poptrox */
+    .poptrox-popup {
+        border-radius: 0;
+    }
+    .poptrox-popup .nav-next:before,
+    .poptrox-popup .nav-previous:before {
+        margin-top: -1em;
+    }
+    /* Added header-container styles */
+    #header-container {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1001;
+        background-color: #1f1815;
+    }
+}
+/* XSmall */
+@media screen and (max-width: 480px) {
+    /* Header */
+    #header {
+        padding: 5px 10px;
+    }
+    #header h1 br {
         display: none;
     }
-}
-
-/* Global styles for the nav-toggle */
-.nav-toggle {
-    display: block;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    font-size: 1em;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 1004;
-}
+    .inner {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    .hero-image-tag {
+        width: 100%;
+        height: auto;
+    }
+    .logo-container {
+        width: 70%;
+    }
+    /* Footer */
+    #footer .copyright li {
+        border-left-width: 0;
+        display: block;
+        line-height: 2.25em;
+        margin-left: 0;
+        padding-left: 0;
+    }
+        /* Added header-container styles */
+     #header-container {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1001;
+        background-color: #1f1815;
+        }
+    }

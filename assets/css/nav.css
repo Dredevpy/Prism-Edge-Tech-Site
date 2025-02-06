@@ -1,0 +1,96 @@
+@media screen and (max-width: 980px) {}
+
+/* General styles for the navbar */
+    .navbar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+/* Styles for nav links */
+    .navbar .nav-link {
+        color: white;
+        font-weight: bold;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 20px; /* Space between nav items on desktop */
+    }
+
+/* Style for navbar brand/logo */
+    .navbar .navbar-brand {
+    font-size: 2.2rem;
+    font-family:  Verdana, sans-serif;
+    }
+
+    .navbar .navbar-brand span {
+    color: white; /* For the brand text within a span */
+    }
+
+
+/* Hover effect for nav links (underline) */
+    .navbar .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: orange;
+    transition: width 0.3s ease-in-out;
+    visibility: hidden;
+    }
+
+    .navbar .nav-link:hover::before {
+    width: 100%;
+    visibility: visible;
+    }
+
+
+/* Styles for mobile devices */
+@media (max-width: 568px) {
+    .navbar .nav-link {
+        color: black; /* Change text color for mobile */
+        margin-right: 0; /* Remove margin on mobile */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navbar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+   /* Remove border and outline from navbar toggler */
+    .navbar-toggler {
+        border: none;
+        outline: none !important;
+        box-shadow: none !important;
+        border-color: transparent !important;
+    }
+
+  /* Style for Font Awesome icon */
+  .navbar-toggler .fa-solid {
+      color: white;
+      font-size: 2.0rem;
+  }
+  .navbar-toggler:focus {
+     outline: none !important;
+     box-shadow: none !important;
+   }
+     .navbar-toggler:active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+  .navbar-toggler:hover {
+    border-color: transparent !important;
+  }
+
+
+  /*Adjust the line for the hover effect on mobile*/
+  .navbar .nav-link::before {
+        left: 10%;
+        transform: translateX(0);
+    }
+    .navbar .nav-link:hover::before {
+        width: 20%;
+  }
+}
