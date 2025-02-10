@@ -4,568 +4,594 @@
     It is designed to work with the base styles provided in main.css.
 */
 
+/* Reset default margin and padding for HTML and body */
 html, body {
     margin: 0;
     padding: 0;
 }
-@media (min-width: 769px) {
+
+/* Media query for screens wider than 980px */
+@media (min-width: 980px) {
     /* Hero Image Styling */
     .hero-image-tag {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
-        max-height: 300px; /* Constrain maximum height */
-        object-fit: cover; /* Ensure the image scales properly */
+        display: block; /* Ensure the image is displayed as a block element */
+        max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+        height: auto; /* Maintain the image's aspect ratio */
+        margin: 0 auto; /* Center the image horizontally */
+        max-height: 300px; /* Constrain the maximum height of the image */
+        object-fit: cover; /* Ensure the image scales properly to cover the container */
     }
-
+    .nav-toggle {
+        display: none; /* Hide the nav-toggle */
+    }
+    /* Center-align content within the inner container */
     .inner {
         text-align: center;
     }
 
+    /* Header inner container styling */
     #header .inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        height: auto; /* Ensure no fixed height */
-        gap: 1em; /* Adds spacing between elements */
-        padding: 1em;
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack child elements vertically */
+        align-items: center; /* Center-align items horizontally */
+        justify-content: center; /* Center-align items vertically */
+        text-align: center; /* Center-align text */
+        height: auto; /* Allow the container to adjust its height based on content */
+        gap: 1em; /* Add spacing between child elements */
+        padding: 1em; /* Add padding inside the container */
     }
 
+    /* Header title styling */
     #header .inner h1 {
-        color: #FFFFFF;
-        font-size: 2em;  /* Modified: reduced to 2em (from 2.5em) */
-        margin-top: 0.2em;
-        text-align: center;
-        font-weight: bold;
-        line-height: 1.35em; /* Added: Reduces line height*/
+        color: #FFFFFF; /* Set text color to white */
+        font-size: 2em; /* Set font size to 2em */
+        margin-top: 0.2em; /* Add top margin */
+        text-align: center; /* Center-align text */
+        font-weight: bold; /* Make text bold */
+        line-height: 1.35em; /* Adjust line height for better readability */
     }
 
+    /* Second line of text in the header */
     #header .inner .second_line {
-        color: rgba(80, 205, 250, 0.933);
-        font-size: 1.5em;
-        margin-top: 0.5em;
-        text-align: center;
+        color: rgba(80, 205, 250, 0.933); /* Set text color to a light blue */
+        font-size: 1.5em; /* Set font size to 1.5em */
+        margin-top: 0.5em; /* Add top margin */
+        text-align: center; /* Center-align text */
     }
 
+    /* Button styling in the header */
     #header .inner .button {
-        display: inline-block;
-        padding: 1em 2em;
-        background-color: #e43f5a; /* Modified: set call to action color */
-        color: #fff !important;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 0.5em;
-        width: auto;
+        display: inline-block; /* Display as an inline block */
+        padding: 1em 2em; /* Add padding inside the button */
+        background-color: #e43f5a; /* Set background color to red */
+        color: #fff !important; /* Set text color to white */
+        text-decoration: none; /* Remove underline from text */
+        border-radius: 5px; /* Add rounded corners */
+        transition: background-color 0.3s ease; /* Add smooth transition for hover effect */
+        display: inline-flex; /* Use flexbox for layout */
+        align-items: center; /* Center-align items vertically */
+        justify-content: center; /* Center-align items horizontally */
+        margin-top: 0.5em; /* Add top margin */
+        width: auto; /* Allow the button to adjust its width based on content */
     }
 
-    /* General Body Styles */
+    /* General body styles */
     body {
-        color: #000;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        color: #000; /* Set default text color to black */
+        background-repeat: no-repeat; /* Prevent background image from repeating */
+        background-size: cover; /* Ensure the background image covers the entire body */
+        background-position: center; /* Center the background image */
     }
 
-    /* Hero Button Styling */
-    #header .inner .button {
-        display: inline-block;
-        padding: 1em 2em;
-        background-color: #e43f5a; /* Modified: set call to action color */
-        color: #fff !important;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 0.5em;
-        width: auto;
-    }
-
+    /* Button hover effect */
     #header .inner .button:hover {
-        background-color: #3eb08f;
-        color: white !important;
-        border-color: #3eb08f;
+        background-color: #3eb08f; /* Change background color on hover */
+        color: white !important; /* Ensure text color remains white */
+        border-color: #3eb08f; /* Change border color on hover */
     }
 
-    /* Logo Container Styling */
+    /* Logo container styling */
     #header .logo-container {
-        width: 100%;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        padding-top: .5em;
-        justify-content: flex-start;
+        width: 100%; /* Make the container full width */
+        margin: 0; /* Remove default margin */
+        display: flex; /* Use flexbox for layout */
+        align-items: center; /* Center-align items vertically */
+        padding-top: .5em; /* Add top padding */
+        justify-content: flex-start; /* Align items to the start of the container */
     }
 
+    /* Logo link styling */
     #header .logo-container a {
-        display: block;
-        width: 100%;
-        height: auto;
-        text-decoration: none;
+        display: block; /* Display as a block element */
+        width: 100%; /* Make the link full width */
+        height: auto; /* Allow the height to adjust based on content */
+        text-decoration: none; /* Remove underline from the link */
     }
 
+    /* Navigation bar container styling */
     .navBar-container {
-        width: 100%;
-        position: relative;
-        top: 0;
-        z-index: 1001;
-        height: 64px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-        padding-top: 10px;
-        background-color: transparent;
+        width: 100%; /* Make the container full width */
+        position: relative; /* Set position to relative */
+        top: 0; /* Align to the top of the container */
+        z-index: 1001; /* Set a high z-index to ensure it appears above other elements */
+        height: 64px; /* Set a fixed height */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); /* Add a subtle shadow */
+        padding-top: 10px; /* Add top padding */
+        background-color: transparent; /* Set background to transparent */
     }
 
+    /* Brand logo in the navigation bar */
+    .navbar-brand {
+        font-size: 2rem; /* Set font size for the brand logo */
+    }
+
+    /* Navigation link styling */
+    .navbar .nav-link {
+        color: black; /* Set link color to black */
+    }
+
+    /* Navigation bar list item styling */
     .navBar ul li a {
-        color: white !important;
-        text-decoration: none;
-        font-size: 1.3rem;
-        padding: 8px 0;
-        border: none;
-        font-family: 'Inter', sans-serif;
-        font-weight: 500;
-        text-transform: capitalize;
-        position: relative;
-        transition: color 0.2s ease;
+        color: white !important; /* Set link color to white */
+        text-decoration: none; /* Remove underline from links */
+        font-size: 1.3rem; /* Set font size */
+        padding: 8px 0; /* Add padding */
+        border: none; /* Remove borders */
+        font-family: 'Inter', sans-serif; /* Set font family */
+        font-weight: 500; /* Set font weight */
+        text-transform: capitalize; /* Capitalize text */
+        position: relative; /* Set position to relative */
+        transition: color 0.2s ease; /* Add smooth transition for hover effect */
     }
 
-    /* Company Name Styling */
-
-    /* Logo Styling */
+    /* Logo styling */
     #header .logo-container img {
-        display: block;
-        width: 100%; /* Modified: make image 100% of parent container */
-        height: auto; /* Modified: make image auto */
-        object-fit: contain; /* Modified: make sure the image maintains its ratio */
-        margin: 0 auto;
+        display: block; /* Display as a block element */
+        /*width: 100%; /* Make the image full width */
+        height: auto; /* Allow the height to adjust based on content */
+        object-fit: contain; /* Ensure the image maintains its aspect ratio */
+        margin: 0 auto; /* Center the image horizontally */
     }
 
-    /* Main Section Spacing */
-
-    /* Icon Styling */
+    /* Icon styling in the main section */
     #main section .icon {
-        color: rgba(100, 100, 100, 0.8);
+        color: rgba(100, 100, 100, 0.8); /* Set icon color to a semi-transparent gray */
     }
 
-    /* Main section button styling */
+    /* Button styling in the main section */
     #main .button {
-        background-color: #e43f5a;
-        color: white !important;
-        border-color: #e43f5a;
+        background-color: #e43f5a; /* Set background color to red */
+        color: white !important; /* Set text color to white */
+        border-color: #e43f5a; /* Set border color to red */
     }
 
+    /* Button hover effect in the main section */
     #main .button:hover {
-        background-color: #ad263d;
-        color: white !important;
-        border-color: #ad263d;
+        background-color: #ad263d; /* Change background color on hover */
+        color: white !important; /* Ensure text color remains white */
+        border-color: #ad263d; /* Change border color on hover */
     }
 
-    /* Remove body background and z-index */
+    /* Main section styling */
     #main {
-        padding-top: 0px;
-        margin-left: 35%;
-        max-width: 54em;
-        padding: 4em;
-        width: calc(100% - 35%);
-        scroll-snap-type: y mandatory;
-        overflow-y: scroll;
-        scroll-behavior: smooth;
+        padding-top: 0px; /* Remove top padding */
+        margin-left: 35%; /* Add left margin */
+        max-width: 54em; /* Set maximum width */
+        padding: 4em; /* Add padding */
+        width: calc(100% - 35%); /* Calculate width based on margin */
+        scroll-snap-type: y mandatory; /* Enable vertical scroll snapping */
+        overflow-y: scroll; /* Enable vertical scrolling */
+        scroll-behavior: smooth; /* Add smooth scrolling */
     }
 
+    /* Section styling in the main area */
     #main > section {
-        scroll-snap-align: start;
-        border-top: solid 2px #efefef;
-        margin: 0;
-        padding: 1em 0 0 0;
+        scroll-snap-align: start; /* Snap sections to the top when scrolling */
+        border-top: solid 2px #efefef; /* Add a top border */
+        margin: 0; /* Remove default margin */
+        padding: 1em 0 0 0; /* Add padding */
     }
 
+    /* Remove top border for the first section */
     #main > section:first-child {
-        border-top: 0;
-        margin-top: 0;
-        padding-top: 0;
+        border-top: 0; /* Remove top border */
+        margin-top: 0; /* Remove top margin */
+        padding-top: 0; /* Remove top padding */
     }
 
-    /* Header container for sticky header - Changed to left side and removed height*/
+    /* Header container styling */
     #header-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1001;
-        background-color: #1f1815;
-        background-attachment: scroll, scroll;
-        background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-        background-position: top left, top left;
-        background-repeat: repeat, no-repeat;
-        background-size: auto, 150%;
-        width: 35%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: space-between;
-        height: 100vh; /* Constrain to viewport height */
+        position: fixed; /* Fix the header to the top of the viewport */
+        top: 0; /* Align to the top */
+        left: 0; /* Align to the left */
+        z-index: 1001; /* Set a high z-index to ensure it appears above other elements */
+        background-color: #1f1815; /* Set background color */
+        background-attachment: scroll, scroll; /* Set background attachment */
+        background-image: url("images/overlay.png"), url("../../images/bg.jpg"); /* Set background images */
+        background-position: top left, top left; /* Set background position */
+        background-repeat: repeat, no-repeat; /* Set background repeat behavior */
+        background-size: auto, 150%; /* Set background size */
+        width: 35%; /* Set width to 35% of the viewport */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack child elements vertically */
+        align-items: flex-end; /* Align items to the end of the container */
+        justify-content: space-between; /* Space out child elements */
+        height: 100vh; /* Set height to 100% of the viewport height */
         overflow: hidden; /* Prevent content overflow */
     }
 
-    /* Header styling for sticky header - Changed to left side and removed width*/
+    /* Header styling */
     #header {
-        padding: .5em 4em;
-        display: -moz-flex;
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-        -moz-flex-direction: column;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -moz-align-items: -moz-flex-end;
-        -webkit-align-items: -webkit-flex-end;
-        -ms-align-items: -ms-flex-end;
-        align-items: flex-end;
-        -moz-justify-content: space-between;
-        -webkit-justify-content: space-between;
-        -ms-justify-content: space-between;
-        justify-content: space-between;
-        color: rgba(255, 255, 255, 0.5);
-        text-align: right;
-        width: 100%;
-        height: auto;
-        position: relative;
-        left: 0;
-        top: 0;
+        padding: .5em 4em; /* Add padding */
+        display: -moz-flex; /* Flexbox for older browsers */
+        display: -webkit-flex; /* Flexbox for older browsers */
+        display: -ms-flex; /* Flexbox for older browsers */
+        display: flex; /* Use flexbox for layout */
+        -moz-flex-direction: column; /* Stack child elements vertically */
+        -webkit-flex-direction: column; /* Stack child elements vertically */
+        -ms-flex-direction: column; /* Stack child elements vertically */
+        flex-direction: column; /* Stack child elements vertically */
+        -moz-align-items: -moz-flex-end; /* Align items to the end */
+        -webkit-align-items: -webkit-flex-end; /* Align items to the end */
+        -ms-align-items: -ms-flex-end; /* Align items to the end */
+        align-items: flex-end; /* Align items to the end */
+        -moz-justify-content: space-between; /* Space out child elements */
+        -webkit-justify-content: space-between; /* Space out child elements */
+        -ms-justify-content: space-between; /* Space out child elements */
+        justify-content: space-between; /* Space out child elements */
+        color: rgba(255, 255, 255, 0.5); /* Set text color to semi-transparent white */
+        text-align: right; /* Align text to the right */
+        width: 100%; /* Make the header full width */
+        height: auto; /* Allow the height to adjust based on content */
+        position: relative; /* Set position to relative */
+        left: 0; /* Align to the left */
+        top: 0; /* Align to the top */
     }
 
-    /* Vendor Logo Styling */
+    /* Vendor logo styling */
     #main .row article img {
-        max-width: 70px !important;
-        height: auto !important;
-        filter: none !important;
-        opacity: 1 !important;
-        display: block;
-        margin: 0 auto;
+        max-width: 70px !important; /* Set maximum width for vendor logos */
+        height: auto !important; /* Allow the height to adjust based on content */
+        filter: none !important; /* Remove any filters */
+        opacity: 1 !important; /* Ensure full opacity */
+        display: block; /* Display as a block element */
+        margin: 0 auto; /* Center the image horizontally */
     }
 
+    /* Row styling in the main section */
     #main .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center !important;
+        display: flex; /* Use flexbox for layout */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center !important; /* Center-align items horizontally */
     }
 
+    /* Article styling in the main section */
     #main .row article {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        flex-direction: column !important;
+        display: flex !important; /* Use flexbox for layout */
+        justify-content: center !important; /* Center-align items horizontally */
+        align-items: center !important; /* Center-align items vertically */
+        flex-direction: column !important; /* Stack child elements vertically */
     }
 
-    /* Header navigation links */
+    /* Navigation bar container styling */
     .navBar-container {
-        width: 100%;
-        position: relative;
-        top: 0;
-        z-index: 2;
-        height: 64px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-        padding-top: 10px;
+        width: 100%; /* Make the container full width */
+        position: relative; /* Set position to relative */
+        top: 0; /* Align to the top */
+        z-index: 2; /* Set a z-index to ensure it appears above other elements */
+        height: 64px; /* Set a fixed height */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); /* Add a subtle shadow */
+        padding-top: 10px; /* Add top padding */
     }
 
+    /* Navigation bar list styling */
     .navBar ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 24px;
-        position: relative;
+        list-style: none; /* Remove default list styling */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+        display: flex; /* Use flexbox for layout */
+        justify-content: center; /* Center-align items horizontally */
+        align-items: center; /* Center-align items vertically */
+        height: 100%; /* Make the list full height */
+        max-width: 1200px; /* Set maximum width */
+        margin: 0 auto; /* Center the list horizontally */
+        padding: 0 24px; /* Add padding */
+        position: relative; /* Set position to relative */
     }
 
+    /* Navigation bar list item styling */
     .navBar ul li {
-        margin-left: 32px;
-        color: #2D3748 !important;
-        text-decoration: none;
-        font-size: 1.1rem;
-        padding: 8px 0;
-        border: none;
-        font-family: 'Inter', sans-serif;
-        font-weight: 500;
-        text-transform: capitalize;
-        position: relative;
-        transition: color 0.2s ease;
+        margin-left: 32px; /* Add left margin */
+        color: #2D3748 !important; /* Set text color */
+        text-decoration: none; /* Remove underline */
+        font-size: 1.1rem; /* Set font size */
+        padding: 8px 0; /* Add padding */
+        border: none; /* Remove borders */
+        font-family: 'Inter', sans-serif; /* Set font family */
+        font-weight: 500; /* Set font weight */
+        text-transform: capitalize; /* Capitalize text */
+        position: relative; /* Set position to relative */
+        transition: color 0.2s ease; /* Add smooth transition for hover effect */
     }
 
-    /* Styling for the navigation links underline */
+    /* Underline effect for navigation links */
     .navBar ul li a::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #e43f5a;
-        transform: scaleX(0);
-        transition: transform 0.2s ease;
+        content: ''; /* Add pseudo-element */
+        position: absolute; /* Set position to absolute */
+        width: 100%; /* Make the underline full width */
+        height: 2px; /* Set underline height */
+        bottom: 0; /* Align to the bottom */
+        left: 0; /* Align to the left */
+        background-color: #e43f5a; /* Set underline color */
+        transform: scaleX(0); /* Initially hide the underline */
+        transition: transform 0.2s ease; /* Add smooth transition */
     }
 
+    /* Hover effect for navigation links */
     .navBar ul li a:hover {
-        color: #e43f5a !important;
-        text-decoration: none;
+        color: #e43f5a !important; /* Change text color on hover */
+        text-decoration: none; /* Remove underline */
     }
 
+    /* Show underline on hover */
     .navBar ul li a:hover::after {
-        transform: scaleX(1);
+        transform: scaleX(1); /* Scale the underline to full width */
     }
 
-    /* Active state for current page */
+    /* Active state for current page link */
     .navBar ul li a.active {
-        color: #e43f5a !important;
-        font-weight: bold;
+        color: #e43f5a !important; /* Set text color for active link */
+        font-weight: bold; /* Make text bold */
     }
 
+    /* Show underline for active link */
     .navBar ul li a.active::after {
-        transform: scaleX(1);
-        background-color: #e43f5a;
+        transform: scaleX(1); /* Scale the underline to full width */
+        background-color: #e43f5a; /* Set underline color */
     }
 
+    /* Media query for screens smaller than 1280px */
     @media screen and (max-width: 1280px) {
-        /* Main */
+        /* Adjust main section layout for smaller screens */
         #main {
-            margin-left: 0;
-            width: 100%;
-            padding-top: 50px !important;
+            margin-left: 0; /* Remove left margin */
+            width: 100%; /* Make the main section full width */
+            padding-top: 50px !important; /* Add top padding */
         }
     }
 
-    /* Form */
+    /* Form styling */
     form {
-        margin: 0 0 2em 0;
-        padding: 0 1em;
-        display: flex;
-        flex-direction: column;
+        margin: 0 0 2em 0; /* Add bottom margin */
+        padding: 0 1em; /* Add padding */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack child elements vertically */
     }
 
+    /* Textarea styling */
     textarea {
-        padding: 0.75em;
-        border: solid 2px #efefef;
-        border-radius: 0.35em;
-        margin-bottom: 1em; /* Added margin bottom*/
+        padding: 0.75em; /* Add padding */
+        border: solid 2px #efefef; /* Add border */
+        border-radius: 0.35em; /* Add rounded corners */
+        margin-bottom: 1em; /* Add bottom margin */
     }
 
+    /* Label styling */
     label {
-        color: #787878;
-        display: block;
-        font-size: 0.9em;
-        font-weight: 400;
-        margin: 0 0 0.5em 0; /* Modified: reduce margin*/
+        color: #787878; /* Set text color */
+        display: block; /* Display as a block element */
+        font-size: 0.9em; /* Set font size */
+        font-weight: 400; /* Set font weight */
+        margin: 0 0 0.5em 0; /* Add bottom margin */
     }
 
+    /* Input and select styling */
     input[type="text"],
     input[type="password"],
     input[type="email"],
     select,
     textarea {
-        padding: 0.75em;
-        border: solid 2px #efefef;
-        border-radius: 0.35em;
+        padding: 0.75em; /* Add padding */
+        border: solid 2px #efefef; /* Add border */
+        border-radius: 0.35em; /* Add rounded corners */
     }
 
+    /* Invalid input styling */
     input[type="text"]:invalid,
     input[type="password"]:invalid,
     input[type="email"]:invalid,
     select:invalid,
     textarea:invalid {
-        box-shadow: none;
+        box-shadow: none; /* Remove default invalid state styling */
     }
 
+    /* Focus state for inputs */
     input[type="text"]:focus,
     input[type="password"]:focus,
     input[type="email"]:focus,
     select:focus,
     textarea:focus {
-        border-color: #49bf9d;
+        border-color: #49bf9d; /* Change border color on focus */
     }
 
+    /* Select dropdown styling */
     select {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23dfdfdf' /%3E%3C/svg%3E");
-        background-size: 1.25rem;
-        background-repeat: no-repeat;
-        background-position: calc(100% - 1rem) center;
-        height: 2.75em;
-        padding-right: 2.75em;
-        text-overflow: ellipsis;
+        background-size: 1.25rem; /* Set background size */
+        background-repeat: no-repeat; /* Prevent background from repeating */
+        background-position: calc(100% - 1rem) center; /* Position the dropdown arrow */
+        height: 2.75em; /* Set height */
+        padding-right: 2.75em; /* Add right padding */
+        text-overflow: ellipsis; /* Add ellipsis for overflow text */
     }
 
+    /* Option styling in select dropdown */
     select option {
-        color: #787878;
-        background: #fff;
+        color: #787878; /* Set text color */
+        background: #fff; /* Set background color */
     }
 
+    /* Remove default styling for select dropdown in IE */
     select:focus::-ms-value {
-        background-color: transparent;
+        background-color: transparent; /* Make background transparent */
     }
 
+    /* Hide default dropdown arrow in IE */
     select::-ms-expand {
-        display: none;
+        display: none; /* Hide the arrow */
     }
 
+    /* Input and select height */
     input[type="text"],
     input[type="password"],
     input[type="email"],
     select {
-        height: 2.75em;
+        height: 2.75em; /* Set height */
     }
 
+    /* Textarea padding */
     textarea {
-        padding: 0.75em;
+        padding: 0.75em; /* Add padding */
     }
 
-    input[type="text"],
-    input[type="password"],
-    input[type="email"],
-    select {
-        height: 2.75em;
-    }
-
+    /* Button styling */
     input[type="submit"],
     input[type="reset"],
     input[type="button"],
     .button {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        -ms-appearance: none;
-        appearance: none;
-        -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-        -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-        -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-        background-color: transparent;
-        border-radius: 0.35em;
-        border: solid 3px #efefef;
-        color: #787878 !important;
-        cursor: pointer;
-        display: inline-block;
-        font-weight: 400;
-        height: 3.15em;
-        height: calc(2.75em + 6px);
-        line-height: 2.75em;
-        min-width: 10em;
-        padding: 0 1.5em;
-        text-align: center;
-        text-decoration: none;
-        white-space: nowrap;
+        -moz-appearance: none; /* Remove default styling in Firefox */
+        -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+        -ms-appearance: none; /* Remove default styling in IE */
+        appearance: none; /* Remove default styling */
+        -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out; /* Add transition for Firefox */
+        -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out; /* Add transition for WebKit browsers */
+        -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out; /* Add transition for IE */
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out; /* Add smooth transition */
+        background-color: transparent; /* Set background to transparent */
+        border-radius: 0.35em; /* Add rounded corners */
+        border: solid 3px #efefef; /* Add border */
+        color: #787878 !important; /* Set text color */
+        cursor: pointer; /* Change cursor to pointer */
+        display: inline-block; /* Display as an inline block */
+        font-weight: 400; /* Set font weight */
+        height: 3.15em; /* Set height */
+        height: calc(2.75em + 6px); /* Calculate height */
+        line-height: 2.75em; /* Set line height */
+        min-width: 10em; /* Set minimum width */
+        padding: 0 1.5em; /* Add padding */
+        text-align: center; /* Center-align text */
+        text-decoration: none; /* Remove underline */
+        white-space: nowrap; /* Prevent text from wrapping */
     }
 
+    /* Button hover effect */
     input[type="submit"]:hover,
     input[type="reset"]:hover,
     input[type="button"]:hover,
     .button:hover {
-        border-color: #49bf9d;
-        color: #49bf9d !important;
+        border-color: #49bf9d; /* Change border color on hover */
+        color: #49bf9d !important; /* Change text color on hover */
     }
 
+    /* Button active state */
     input[type="submit"]:active,
     input[type="reset"]:active,
     input[type="button"]:active,
     .button:active {
-        background-color: rgba(73, 191, 157, 0.1);
-        border-color: #49bf9d;
-        color: #49bf9d !important;
+        background-color: rgba(73, 191, 157, 0.1); /* Change background color on active state */
+        border-color: #49bf9d; /* Change border color on active state */
+        color: #49bf9d !important; /* Change text color on active state */
     }
 
+    /* Icon button styling */
     input[type="submit"].icon,
     input[type="reset"].icon,
     input[type="button"].icon:before,
     .button.icon {
-        padding-left: 1.35em;
+        padding-left: 1.35em; /* Add left padding */
     }
 
+    /* Icon button hover effect */
     input[type="submit"]:hover,
     input[type="reset"]:hover,
     input[type="button"]:hover,
     .button:hover {
-        border-color: #49bf9d;
-        color: #49bf9d !important;
+        border-color: #49bf9d; /* Change border color on hover */
+        color: #49bf9d !important; /* Change text color on hover */
     }
 
+    /* Icon button active state */
     input[type="submit"]:active,
     input[type="reset"]:active,
     input[type="button"]:active,
     .button:active {
-        background-color: rgba(73, 191, 157, 0.1);
-        border-color: #49bf9d;
-        color: #49bf9d !important;
+        background-color: rgba(73, 191, 157, 0.1); /* Change background color on active state */
+        border-color: #49bf9d; /* Change border color on active state */
+        color: #49bf9d !important; /* Change text color on active state */
     }
 
-    input[type="submit"].icon,
-    input[type="reset"].icon,
-    input[type="button"].icon:before,
-    .button.icon {
-        padding-left: 1.35em;
-    }
-
+    /* Icon button pseudo-element styling */
     input[type="submit"].icon:before,
     input[type="reset"].icon:before,
     input[type="button"].icon:before,
     .button.icon:before {
-        margin-right: 0.5em;
+        margin-right: 0.5em; /* Add right margin */
     }
 
+    /* Fit button styling */
     input[type="submit"].fit,
     input[type="reset"].fit,
     input[type="button"].fit,
     .button.fit {
-        min-width: 0;
-        width: 100%;
+        min-width: 0; /* Remove minimum width */
+        width: 100%; /* Make the button full width */
     }
 
+    /* Small button styling */
     input[type="submit"].small,
     input[type="reset"].small,
     input[type="button"].small,
     .button.small {
-        font-size: 0.8em;
+        font-size: 0.8em; /* Set smaller font size */
     }
 
+    /* Large button styling */
     input[type="submit"].large,
     input[type="reset"].large,
     input[type="button"].large,
     .button.large {
-        font-size: 1.35em;
+        font-size: 1.35em; /* Set larger font size */
     }
 
+    /* Primary button styling */
     input[type="submit"].primary,
     input[type="reset"].primary,
     input[type="button"].primary,
     .button.primary {
-        background-color: #49bf9d;
-        border-color: #49bf9d;
-        color: #ffffff !important;
+        background-color: #49bf9d; /* Set background color */
+        border-color: #49bf9d; /* Set border color */
+        color: #ffffff !important; /* Set text color to white */
     }
 
+    /* Primary button hover effect */
     input[type="submit"].primary:hover,
     input[type="reset"].primary:hover,
     input[type="button"].primary:hover,
     .button.primary:hover {
-        background-color: #5cc6a7;
-        border-color: #5cc6a7;
+        background-color: #5cc6a7; /* Change background color on hover */
+        border-color: #5cc6a7; /* Change border color on hover */
     }
 
+    /* Primary button active state */
     input[type="submit"].primary:active,
     input[type="reset"].primary:active,
     input[type="button"].primary:active,
     .button.primary:active {
-        background-color: #3eb08f;
-        border-color: #3eb08f;
+        background-color: #3eb08f; /* Change background color on active state */
+        border-color: #3eb08f; /* Change border color on active state */
     }
 
+    /* Disabled button styling */
     input[type="submit"].disabled,
     input[type="submit"]:disabled,
     input[type="reset"].disabled,
@@ -574,56 +600,58 @@ html, body {
     input[type="button"]:disabled,
     .button.disabled,
     .button:disabled {
-        background-color: #e7e7e7 !important;
-        border-color: #e7e7e7 !important;
-        color: #b2b2b2 !important;
-        cursor: default;
+        background-color: #e7e7e7 !important; /* Set background color for disabled state */
+        border-color: #e7e7e7 !important; /* Set border color for disabled state */
+        color: #b2b2b2 !important; /* Set text color for disabled state */
+        cursor: default; /* Change cursor to default */
     }
 
-
-    /* Footer Styling */
+    /* Footer styling */
     .hide {
-        display: none;
+        display: none; /* Hide elements with this class */
     }
 
+    /* Footer icons styling */
     #footer .icons {
-        margin: 1em 0 0 0;
+        margin: 1em 0 0 0; /* Add top margin */
     }
 
+    /* Footer copyright text styling */
     #footer .copyright {
-        color: rgba(255, 255, 255, 0.4);
-        font-size: 0.8em;
-        list-style: none;
-        margin: 1em 0 0 0;
-        padding: 0;
+        color: rgba(255, 255, 255, 0.4); /* Set text color to semi-transparent white */
+        font-size: 0.8em; /* Set font size */
+        list-style: none; /* Remove default list styling */
+        margin: 1em 0 0 0; /* Add top margin */
+        padding: 0; /* Remove default padding */
     }
 
+    /* Footer copyright list item styling */
     #footer .copyright li {
-        border-left: solid 1px rgba(255, 255, 255, 0.25);
-        display: inline-block;
-        line-height: 1em;
-        margin-left: 0.75em;
-        padding-left: 0.75em;
+        border-left: solid 1px rgba(255, 255, 255, 0.25); /* Add left border */
+        display: inline-block; /* Display as inline block */
+        line-height: 1em; /* Set line height */
+        margin-left: 0.75em; /* Add left margin */
+        padding-left: 0.75em; /* Add left padding */
     }
 
+    /* Remove left border for the first copyright list item */
     #footer .copyright li:first-child {
-        border-left: 0;
-        margin-left: 0;
-        padding-left: 0;
+        border-left: 0; /* Remove left border */
+        margin-left: 0; /* Remove left margin */
+        padding-left: 0; /* Remove left padding */
     }
 
+    /* Footer copyright link styling */
     #footer .copyright li a {
-        color: inherit;
+        color: inherit; /* Inherit text color */
     }
 
-    /* Fix label alignment within form*/
+    /* Label alignment within forms */
     .col-8 label {
-        display: inline-block;
-        width: 100px;
-        text-align: right;
-        padding-right: 10px;
-        margin-bottom: 0; /* Modified: remove margin-bottom*/
+        display: inline-block; /* Display as inline block */
+        width: 100px; /* Set width */
+        text-align: right; /* Align text to the right */
+        padding-right: 10px; /* Add right padding */
+        margin-bottom: 0; /* Remove bottom margin */
     }
 }
-
-

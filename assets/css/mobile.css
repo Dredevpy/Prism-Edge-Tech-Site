@@ -1,262 +1,235 @@
+/* START OF FILE mobile.css */
 
+/* Media query for screens with a maximum width of 980px */
 @media screen and (max-width: 980px) {
-    /* Basic */
-    h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
-        display: none;
-    }
-    /* List */
-    ul.icons li .icon {
-        font-size: 1.25em;
-    }
-    /* Header */
-        /* Added header-container styles */
-    #header-container {
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1001;
-        background-color: #1f1815;
-    }
+    /* Basic styles for screens smaller than 980px */
+    /* List styles (currently empty) */
+
+    /* Header styles */
+    /* Added header-container styles (not implemented in this CSS)*/
+
+    /* Styles for the header element */
     #header {
-        display: block;
-        justify-content: space-between;
-        align-items: center;
-        padding: 6em 4em;
-        width: 100%; 
+        display: flex; /* Enables flexbox layout for the header */
+        align-items: center; /* Vertically aligns items within the header */
+        width: 100%; /* Makes the header take up the full width */
+        padding: 5px 10px; /* Adds padding to the header */
     }
-    .logo-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70%;
-        box-sizing: border-box;
+
+    /* Hides the .inner element (probably a navigation container) on smaller screens */
+    #header .inner { 
+        display: none; 
     }
-    .logo-container img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        box-sizing: border-box;
+
+/* Styles for logo and toggle containers */
+#header .logo-container, .nav-toggle-container {
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Distributes space between items */
+    width: 100%; /* Set width to 100% of the parent container */
+}
+
+
+.row {
+    display: flex; /* Enable flexbox for the row */
+    justify-content: space-between; /* Distribute space between items */
+  }
+
+  .row:nth-child(1) > div:nth-child(1) { /* Selects the logo container */
+    width: 80%; /* Takes 80% of the row's width */
+  }
+
+  .row:nth-child(1) > div:nth-child(2) { /* Selects the toggle container */
+    width: 20%; /* Takes 20% of the row's width */
+    text-align: right; /* Aligns the toggle to the right */
+    display: flex; /* Enables flexbox for the container */
+    justify-content: flex-end; /* Aligns the toggle to the right end */
+
+  }
+/* Logo container styles */
+#header .logo-container a {
+    width: 80%; /* Makes the logo link take up 80% of its container's width */
+}
+
+/* Navigation toggle container styles */
+#header .nav-toggle-container {
+    width: 20%; /* Makes the toggle container take up 20% of its parent's width */
+    text-align: right; /* Aligns the toggle to the right */
+    display: flex; /* Make it a flex container to control alignment */
+    justify-content: flex-end; /* Align the toggle to the right end */
+}
+.nav-toggle {
+    background-color: transparent; /* Set the background color to black */
+    border: none; /* Remove default border */
+    padding: 0.5rem 1rem; /* Add some padding */
+    font-size: 1.8rem; /* Adjust font size as needed */
+    cursor: pointer;
+    color: white; /* Set text color to white for better contrast */
+}
+
+    /* Styles for the navbar toggler (hamburger menu) */
+    .navbar-toggler{
+        background-color: transparent; /* Sets the background color of the toggler to transparent */
+        border:none; /* Removes the border from the toggler */
     }
-    .nav-toggle-container {
-        display: flex;
-        align-items: center;
+
+    /* Styles for the navbar toggler icon */
+    .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="%23fff" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="M4 8h24M4 16h24M4 24h24"/%3E%3C/svg%3E'); /* Sets a custom SVG icon for the toggler */
     }
-    .nav-toggle {
-        cursor: pointer;
+
+    /* Styles for the collapsed navbar */
+    .navbar-collapse{
+        background-color: #1f1815; /* Sets the background color of the collapsed navbar */
+        color: white; /* Sets the text color of the collapsed navbar */
     }
-    #header h1 {
-        font-size: 1.75em;
+
+    /* Styles for the navbar navigation items */
+    .navbar-nav{
+        text-align: center; /* Centers the navigation items */
     }
-    #header h1 br {
-        display: inline;
+    .navbar-nav li{
+        margin-bottom: 10px; /* Adds bottom margin between navigation items */
     }
-    .inner {
-        width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-        box-sizing: border-box;
-    }
-        /* Basic styling for the navbar container */
+
+
+    /* Styles for the navBar container */
     .navBar-container {
-        width: 100%; /* Ensures the container spans the full width */
-        margin: 0;  /* Removes any default margins */
-        padding: 0; /* Removes any default paddings */
-        box-sizing: border-box; /* Ensures padding and border are included in the total width */
+        width: 100%; /* Full width */
+        margin: 0;  /* No margins */
+        padding: 0; /* No padding */
+        box-sizing: border-box; /* Includes padding and border in element's total width and height */
     }
-/* Styling for the navigation bar itself */
+    /* Styles for the navBar element */
     .navBar {
-        width: 100%;  /* Makes the navigation bar span the full width of its container */
-        box-sizing: border-box;  /* Ensures padding and border are included in the total width */
+        width: 100%; /* Full width */
+        box-sizing: border-box; /* Includes padding and border in element's total width and height */
     }
-/* Styling for the navigation links (optional) */
+
+
+    /* Styling for the navigation links */
     .navBar ul {
-    
-        justify-content: space-between; /* Evenly distribute links */
-        width: 100%; /* Make nav take full width */
-        list-style-type: none; /* Removes bullet points from the list */
-        margin: 0;   /* Removes default margins */
-        padding: 0;  /* Removes default paddings */
-        display: flex; /* Arranges the links in a row */
-        box-sizing: border-box;  /* Ensures padding and border are included in the total width */
+        justify-content: space-between; /* Distributes space between list items */
+        width: 100%; /* Full width */
+        list-style-type: none; /* Removes bullet points */
+        margin: 0;   /* No margins */
+        padding: 0;  /* No padding */
+        display: flex; /* Enables flexbox layout */
+        box-sizing: border-box;  /* Includes padding and border in element's total width and height */
     }
     .navBar li {
-        margin: 0 15px; /* Adds spacing between the links */
-        box-sizing: border-box;  /* Ensures padding and border are included in the total width */
+        margin: 0 15px; /* Adds horizontal margin between list items */
+        box-sizing: border-box;  /* Includes padding and border in element's total width and height */
     }
     .navBar ul li {
-        margin: 0 8px; /* Reduce space between links */
-        padding: 5px 0; /* Adjust padding */
+        margin: 0 8px; /* Reduces horizontal margin between list items */
+        padding: 5px 0; /* Adds vertical padding */
     }
 
     .navBar a {
         text-decoration: none; /* Removes underlines from links */
         color: rgb(249, 241, 241); /* Sets the link color */
-        box-sizing: border-box;  /* Ensures padding and border are included in the total width */
+        box-sizing: border-box;  /* Includes padding and border in element's total width and height */
     }
     .navBar a:hover {
-        color: blue; /* Changes the link color on hover (optional) */
+        color: blue; /* Changes the link color on hover */
     }
 
 
+    /* Hero image styles */
     .hero-image-tag {
-        width: 100%;
-        height: auto;
+        width: 100%; /* Full width */
+        height: auto; /* Maintains aspect ratio */
     }
-    /* Footer */
+
+    /* Footer styles */
     #footer {
-        background-attachment: scroll;
-        background-color: #1f1815;
-        background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-        background-position: top left, bottom center;
-        background-repeat: repeat, no-repeat;
-        background-size: auto, cover;
-        bottom: auto;
-        left: auto;
-        padding: 4em 4em 6em 4em;
-        position: relative;
-        text-align: center;
-        width: 100%;
+        background-attachment: scroll; /* Background scrolls with the page */
+        background-color: #1f1815; /* Background color */
+        background-image: url("images/overlay.png"), url("../../images/bg.jpg"); /* Multiple background images */
+        background-position: top left, bottom center; /* Positions the background images */
+        background-repeat: repeat, no-repeat; /* Repeat the first background image, don't repeat the second */
+        background-size: auto, cover; /* Adjusts the size of the background images */
+        bottom: auto; /* Removes bottom positioning */
+        left: auto; /* Removes left positioning */
+        padding: 4em 4em 6em 4em; /* Adds padding */
+        position: relative; /* Positions the element relative to its parent */
+        text-align: center; /* Centers text */
+        width: 100%; /* Full width */
     }
     #footer .icons {
-        margin: 0 0 1em 0;
+        margin: 0 0 1em 0; /* Adds margin */
     }
     #footer .copyright {
-        margin: 0 0 1em 0;
+        margin: 0 0 1em 0; /* Adds margin */
     }
     #footer .copyright li {
-        border-left-width: 1px;
-        display: inline-block;
-        line-height: 1em;
-        margin-left: 0.75em;
-        padding-left: 0.75em;
+        border-left-width: 1px; /* Adds a border to the left */
+        display: inline-block; /* Makes the list item an inline block element */
+        line-height: 1em; /* Adjusts line height */
+        margin-left: 0.75em; /* Adds margin to the left */
+        padding-left: 0.75em; /* Adds padding to the left */
     }
-    /* Main */
+
+    /* Main content styles */
     #main {
-        margin: 0;
-        padding: 6em 4em;
-        width: 100%;
+        margin: 0; /* No margins */
+        padding: 6em 4em; /* Adds padding */
+        width: 100%; /* Full width */
     }
 }
-/* Small */
-@media screen and (max-width: 736px) {
-            /* Added header-container styles */
-    #header-container {
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1001;
-        background-color: #1f1815;
-    }
-    /* Basic */
-    h1 {
-        font-size: 1.5em;
-    }
-    h2 {
-        font-size: 1.2em;
-    }
-    h3 {
-        font-size: 1em;
-    }
-    /* Section/Article */
-    section.special, article.special {
-        text-align: center;
-    }
-    header.major h2 {
-        font-size: 1.35em;
-    }
-    /* List */
-    ul.labeled-icons li {
-        padding-left: 2em;
-    }
-    ul.labeled-icons li h3 {
-        line-height: 1.75em;
-    }
-    /* Header */
-    #header {
-        padding: 5px 10px;
-    }
-    #header h1 {
-        font-size: 1.35em;
-    }
-    .inner {
-        width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-        box-sizing: border-box;
-    }
-    .hero-image-tag {
-        width: 100%;
-        height: auto;
-    }
-    /* Footer */
-    #footer {
-        padding: 2.25em 1.5em;
-    }
-    /* Main */
-    #main {
-        padding: 2.25em 1.5em 0.25em 1.5em;
-    }
-    #main > section {
-        margin: 2.25em 0 0 0;
-        padding: 2.25em 0 0 0;
-    }
-    /* Poptrox */
-    .poptrox-popup {
-        border-radius: 0;
-    }
-    .poptrox-popup .nav-next:before,
-    .poptrox-popup .nav-previous:before {
-        margin-top: -1em;
-    }
-    /* Added header-container styles */
-    #header-container {
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1001;
-        background-color: #1f1815;
-    }
-}
-/* XSmall */
+
+/* Media query for screens with a maximum width of 480px */
 @media screen and (max-width: 480px) {
-    /* Header */
-    #header {
-        padding: 5px 10px;
-    }
+    /* Header styles */
+    /* Hides the line break in the header h1 */
     #header h1 br {
         display: none;
     }
+    /* Styles for the inner element */
     .inner {
-        width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-        box-sizing: border-box;
+        width: 100%; /* Full width */
+        padding-left: 10px; /* Adds padding to the left */
+        padding-right: 10px; /* Adds padding to the right */
+        box-sizing: border-box; /* Includes padding and border in element's total width and height */
     }
+    /* Hero image styles */
     .hero-image-tag {
-        width: 100%;
-        height: auto;
+        width: 100%; /* Full width */
+        height: auto; /* Maintains aspect ratio */
     }
+    /* Logo container styles */
     .logo-container {
-        width: 70%;
+        display: flex; /* Enables flexbox layout */
+        justify-content: center; /* Centers items horizontally */
+        align-items: center; /* Centers items vertically */
+        width: 80%; /* 80% width */
+        box-sizing: border-box; /* Includes padding and border in element's total width and height */
     }
-    /* Footer */
+    .logo-container a {
+        width: 80%; /* 80% width */
+    }
+    .logo-container img {
+        max-width: 100%; /* Maximum width of 100% */
+        height: auto; /* Maintains aspect ratio */
+        display: block; /* Makes the image a block-level element */
+        box-sizing: border-box; /* Includes padding and border in element's total width and height */
+    }
+
+    /* Footer styles */
     #footer .copyright li {
-        border-left-width: 0;
-        display: block;
-        line-height: 2.25em;
-        margin-left: 0;
-        padding-left: 0;
+        border-left-width: 0; /* Removes the left border */
+        display: block; /* Makes the list item a block-level element */
+        line-height: 2.25em; /* Adjusts line height */
+        margin-left: 0; /* Removes left margin */
+        padding-left: 0; /* Removes left padding */
     }
-        /* Added header-container styles */
-     #header-container {
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1001;
-        background-color: #1f1815;
-        }
+    /* Added header container styles (still not implemented in the CSS provided)*/
+    #header-container {
+        width: 100%; /* Full width */
+        position: fixed; /* Makes the header fixed to the viewport */
+        top: 0; /* Positions the header at the top */
+        left: 0; /* Positions the header at the left */
+        z-index: 1001; /* Sets a high z-index to ensure it's on top */
+        background-color: #1f1815; /* Sets the background color */
     }
+}
